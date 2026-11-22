@@ -52,6 +52,12 @@ class BridgeTests(unittest.TestCase):
         self.assertEqual(a, b)
         self.assertRegex(a["intake_sha256"], "^[0-9a-f]{64}$")
 
+
+    def test_preserves_long_fixed_point_export_precision(self):
+        obj = fixture()
+        obj["ending_equity"] = "1050." + "0" * 80
+        self.assertEqual(assess_summary(obj)["metrics"]["net_return_pct"], "5")
+
     def test_negative_return_is_valid_diagnostic(self):
         obj = fixture()
         obj.update(ending_equity="940", net_return_pct="-6")
