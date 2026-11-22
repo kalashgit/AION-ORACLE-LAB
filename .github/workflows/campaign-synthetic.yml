@@ -1,0 +1,44 @@
+name: Genesis Oracle bounded synthetic campaign
+on:
+  pull_request:
+    paths:
+      - "campaign/**"
+      - "oracle_lab/**"
+      - "tests/**"
+      - ".github/workflows/campaign-synthetic.yml"
+      - "docs/MASTER-CAMPAIGN.md"
+  workflow_dispatch:
+  # Schedules only run from default branch after reviewed merge.
+  schedule:
+    - cron: "23 3 * * *"
+permissions:
+  contents: read
+concurrency:
+  group: synthetic-campaign-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  bounded-offline-research:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run all standard library regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Perform three preregistered synthetic-only cost studies
+        run: python -m campaign.run --output artifacts/campaign-synthetic.json
+      - name: Verify artifact against exact source and fixture
+        run: python -m campaign.verify --input artifacts/campaign-synthetic.json
+      - name: Publish machine-readable trial evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-campaign-evidence
+          path: artifacts/campaign-synthetic.json
+          if-no-files-found: error
+          retention-days: 7
