@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "state": "PREREGISTERED_NOT_EXECUTED",
+  "baseline": {
+    "market": "BTC/USDT spot",
+    "bar_minutes": 5,
+    "starting_capital_usdt": 1000,
+    "max_new_position_usdt": 100,
+    "no_leverage": true,
+    "fee_bps_each_side": 10,
+    "slippage_bps_each_side": 5,
+    "full_modeled_spread_bps": 10,
+    "full_exposure_passive_reference": "EXCEPTION_SEPARATE_FROM_CAPPED_COMPARISON"
+  },
+  "studies": {
+    "october_2026": {
+      "start_utc": "2026-10-01T00:00:00Z",
+      "end_exclusive_utc": "2026-11-01T00:00:00Z",
+      "licensed_training_data": "NOT_VERIFIED",
+      "real_result": "NOT_MEASURED"
+    },
+    "original_three_day": {
+      "bars": 864,
+      "dates": "RECOVER_AND_FREEZE_ORIGINAL_3_DAY_WINDOW",
+      "real_result": "NOT_MEASURED"
+    },
+    "synthetic_smoke": {
+      "bars": 864,
+      "seed": 421,
+      "sample_start_utc": "2026-10-01T00:00:00Z",
+      "type": "SYNTHETIC_ONLY"
+    }
+  },
+  "controls": {
+    "A_passive": "SMOKE_ONLY",
+    "B_freqtrade": "NOT_MEASURED",
+    "C_freqai": "NOT_MEASURED",
+    "D_finrl_ppo": "NOT_MEASURED"
+  },
+  "validation": [
+    "pre-register experiments",
+    "log all trials and costs",
+    "strict chronology and no leakage",
+    "compare identical datasets and fees",
+    "3 separate single-factor environment challenges",
+    "independent out-of-sample evaluation",
+    "record missed gains and avoided losses",
+    "founder approval before any live execution"
+  ],
+  "live_trading_enabled": false
+}
