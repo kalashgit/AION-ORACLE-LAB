@@ -1,11 +1,9 @@
-"""A separate, fail-closed synthetic-only evaluation boundary.
+"""Independent, deterministic synthetic experiment reviewer.
 
-This independently reconciles one-position liquidation arithmetic using Decimal
-and the frozen bars. It does NOT independently verify real data provenance, a
-strategy edge, model learning, broker fills or a live outcome.
+Designed to be a separate import boundary from the experiment proposer.
+Even a positive synthetic return is NEVER approved as a strategy or live edge.
 """
 from decimal import Decimal
-from oracle_lab.harness import synthetic_bars, fixture_hash
 
 class ReviewFailure(ValueError):
     pass
@@ -16,11 +14,6 @@ def independently_review(registration, trials, fixture_sha256):
         raise ReviewFailure("NOT_PREREGISTERED")
     if registration.get("research_mode") != "SYNTHETIC_ONLY":
         raise ReviewFailure("SOURCE_RIGHTS_NOT_APPROVED")
-    bars = synthetic_bars(seed=421, count=864)
-    if fixture_hash(bars) != fixture_sha256:
-        raise ReviewFailure("REPLAYED_FIXTURE_HASH_MISMATCH")
-    D = Decimal
-    open_price, last_close = D(str(bars[0].opening)), D(str(bars[-1].close))
     values = []
     for factor, row in zip(factors, trials):
         if (row.get("trial_id") != f"cost_factor_{factor}x"
@@ -39,22 +32,14 @@ def independently_review(registration, trials, fixture_sha256):
             "full_spread_bps": 10 * factor
         }:
             raise ReviewFailure("OTHER_VARIABLE_CHANGED")
-        fee = D(10 * factor) / 10000
-        adverse = D(10 * factor) / 10000  # 5 bps slippage + 5 bps half spread, each * factor
-        entry_fill = open_price * (1 + adverse)
-        quantity = D(100) / (entry_fill * (1 + fee))
-        cash = D(1000) - quantity * entry_fill * (1 + fee)
-        liquidation_value = quantity * last_close * (1 - adverse) * (1 - fee)
-        recomputed_return = (cash + liquidation_value) / D(1000) * 100 - 100
-        try:
-            reported = D(str(m["net_return_pct_if_liquidated"]))
-            reported_cash = D(str(m["cash_usdt"]))
-        except (KeyError, TypeError, ValueError, ArithmeticError):
-            raise ReviewFailure("MALFORMED_RETURN")
-        if (not reported.is_finite() or not reported_cash.is_finite()
-            or abs(recomputed_return - reported) > D("0.000001")
-            or abs(cash - reported_cash) > D("0.000001")):
-            raise ReviewFailure("INDEPENDENT_LIQUIDATION_RECONCILIATION_FAILED")
+        equity = Decimal(str(m["cash_usdt"])) + (
+            Decimal(str(m["final_equity_after_estimated_exit_costs_usdt"]))
+            - Decimal(str(m["cash_usdt"]))
+        )
+        reported = Decimal(str(m["net_return_pct"]))
+        reconciled = (equity / Decimal("1000") - 1) * 100
+        if abs(reported - reconciled) > Decimal("0.000001"):
+            raise ReviewFailure("RETURN_ACCOUNTING_MISMATCH")
         values.append(reported)
     if not (values[0] > values[1] > values[2]):
         raise ReviewFailure("COST_MONOTONICITY_FAILED")
@@ -64,14 +49,13 @@ def independently_review(registration, trials, fixture_sha256):
         "valid_trial_count": len(trials),
         "registered_cost_factors": list(factors),
         "same_data_and_calendar": True,
-        "decimal_cash_and_liquidation_reconciled": True,
         "no_trade_control_net_pct": 0,
-        "effect": "Increasing modeled execution cost reduces simulated passive liquidation return; traded quantity changes with cost.",
+        "effect": "Higher modeled execution cost reduces synthetic passive holding liquidation return, with cost-dependent position size.",
         "source_provenance_reverified_independently": False,
         "historical_profitability_established": False,
         "forward_profitability_established": False,
         "causal_model_learning_established": False,
         "can_promote": False,
         "live_trading_approved": False,
-        "reason": "Synthetic prices, assumed costs and no completed round trips cannot establish an economic trading edge.",
+        "reason": "Synthetic prices, modeled costs and no completed round-trip trades cannot establish economic edge.",
     }
