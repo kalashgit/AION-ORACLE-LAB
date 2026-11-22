@@ -1,0 +1,138 @@
+{
+  "schema": "AIONOracleCampaign/1",
+  "campaign_id": "AO-FULL-2026-11",
+  "status": "EXECUTING_INITIAL_WORK_UNFINISHED",
+  "created_utc_date": "2026-11-22",
+  "repositories": {
+    "existing_application": "kalashgit/AION-GENESYS",
+    "isolated_lab": "kalashgit/AION-ORACLE-LAB"
+  },
+  "authority": {
+    "lab_branch_prs": true,
+    "synthetic_ci": true,
+    "propose_memory_changes": true,
+    "production_write": false,
+    "auto_merge": false,
+    "live_orders": false,
+    "broker_credentials": false,
+    "paid_services": false,
+    "ml_training_unlicensed": false
+  },
+  "research_objective": {
+    "target_net_return_pct": 5,
+    "horizon_completed_5m_bars": 864,
+    "starting_capital_usdt": 1000,
+    "risk": "NO_LEVERAGE_100_USDT_MAX_NEW_POSITION",
+    "horizon_dates": "MUST_RECOVER_FROM_ORIGINAL_REGISTER",
+    "evidence_status": "NOT_PROVEN",
+    "separate_studies": [
+      "october_2026_historical",
+      "30_day_proposed"
+    ]
+  },
+  "critical_path": [
+    "A0",
+    "C0",
+    "C1",
+    "E0",
+    "G0",
+    "D0",
+    "D1",
+    "B0",
+    "E1",
+    "F0",
+    "H0",
+    "H1"
+  ],
+  "workstreams": [
+    {
+      "id": "A",
+      "name": "Existing system integration",
+      "depends_on": [],
+      "status": "IN_PROGRESS",
+      "acceptance": "canonical private lineage, tests, compatibility contract, reviewed integration"
+    },
+    {
+      "id": "B",
+      "name": "Genesis intelligence",
+      "depends_on": [
+        "C1",
+        "D0"
+      ],
+      "status": "PLANNED",
+      "acceptance": "unfamiliar-case gains vs frozen base, documented regressions"
+    },
+    {
+      "id": "C",
+      "name": "Scientific experiment factory",
+      "depends_on": [
+        "A"
+      ],
+      "status": "IN_PROGRESS",
+      "acceptance": "immutable experiments, no-leakage tests, independent evaluator"
+    },
+    {
+      "id": "D",
+      "name": "Strategy research",
+      "depends_on": [
+        "C",
+        "A"
+      ],
+      "status": "BLOCKED_DATA_RIGHTS_FOR_ML",
+      "acceptance": "identical controls and source rights, fresh out-of-sample evidence"
+    },
+    {
+      "id": "E",
+      "name": "Continuous improvement",
+      "depends_on": [
+        "C",
+        "D"
+      ],
+      "status": "IN_PROGRESS_SYNTHETIC_ONLY",
+      "acceptance": "measured hypothesis-to-memory loop, non-self-promoting"
+    },
+    {
+      "id": "F",
+      "name": "Oracle terminal",
+      "depends_on": [
+        "A",
+        "E"
+      ],
+      "status": "PLANNED",
+      "acceptance": "existing terminal integrates verified research, validated paper workflow"
+    },
+    {
+      "id": "G",
+      "name": "Observability and operations",
+      "depends_on": [
+        "C"
+      ],
+      "status": "PLANNED",
+      "acceptance": "audited Langfuse traces, bounded scheduled jobs, budget/alerts"
+    },
+    {
+      "id": "H",
+      "name": "Forward readiness",
+      "depends_on": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "status": "BLOCKED_FORWARD_EVIDENCE",
+      "acceptance": "paper forward reliability, risk controls, rollback, human review"
+    }
+  ],
+  "promotion_policy": "DENY_UNLESS_INDEPENDENT_FORWARD_AND_HUMAN_APPROVAL",
+  "scheduled_research": {
+    "allowed": "synthetic_only",
+    "max_trials_per_run": 3,
+    "market_network_requests": 0,
+    "model_calls": 0,
+    "live_execution": false,
+    "nightly_when_merged_to_default": true,
+    "max_runner_minutes": 10
+  },
+  "actual_real_market_net_return": "NOT_MEASURED",
+  "actual_live_net_return": "NOT_MEASURED"
+}
