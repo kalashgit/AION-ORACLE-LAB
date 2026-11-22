@@ -1,0 +1,206 @@
+{
+  "source_repository": "kalashgit/ProjectLight",
+  "method": "GitHub Actions artifact metadata, not downloaded ZIP byte verification",
+  "runs": [
+    {
+      "run_id": 45026745823,
+      "artifacts": [
+        {
+          "id": 14756620225,
+          "name": "genesis4x4-C-actual-framework-synthetic",
+          "size_in_bytes": 638093,
+          "expired": false,
+          "digest": "sha256:29cec5a7173e2bf4b7c4aa8b981f040a206ed717e2965229dcfc0c5416a1bb3a",
+          "workflow_run": {
+            "id": 45026745823,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/4x4-bc-shared-synthetic-20261122",
+            "head_sha": "e612453b205f5464007ef6ae4d7e0f253f3cd818"
+          },
+          "created_at": "2026-11-22T13:19:29Z"
+        },
+        {
+          "id": 14755823433,
+          "name": "genesis4x4-B-actual-framework-synthetic",
+          "size_in_bytes": 955484,
+          "expired": false,
+          "digest": "sha256:e376f94edd1ad26b2055c53cfbc6f6c0922f3267ef8661335ef0854208020cba",
+          "workflow_run": {
+            "id": 45026745823,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/4x4-bc-shared-synthetic-20261122",
+            "head_sha": "e612453b205f5464007ef6ae4d7e0f253f3cd818"
+          },
+          "created_at": "2026-11-22T13:19:37Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45027242269,
+      "artifacts": [
+        {
+          "id": 14755469661,
+          "name": "genesis-4x4-B-lookahead-audit-synthetic",
+          "size_in_bytes": 13247,
+          "expired": false,
+          "digest": "sha256:154c09df97929b0ac9086a672a9df46c89f22f2761f7a2e505c02dbf48071244",
+          "workflow_run": {
+            "id": 45027242269,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/4x4-bc-shared-synthetic-20261122",
+            "head_sha": "5220df7f0c46b6c787a4ee4de3ff3cd70bd57ed0"
+          },
+          "created_at": "2026-11-22T13:25:44Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45027308392,
+      "artifacts": [
+        {
+          "id": 14756016919,
+          "name": "genesis-B-E0-synthetic-cost-ablation",
+          "size_in_bytes": 698931,
+          "expired": false,
+          "digest": "sha256:5c5f8d42835614543c97570467638aeca56997681fa1d595b0c3f3022e23bd9f",
+          "workflow_run": {
+            "id": 45027308392,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/4x4-bc-shared-synthetic-20261122",
+            "head_sha": "7df16edf9334561c26545aa362e81159152fe592"
+          },
+          "created_at": "2026-11-22T13:25:19Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45028129922,
+      "artifacts": [
+        {
+          "id": 14756417113,
+          "name": "oracle-candidate-v1-B-fresh-synthetic",
+          "size_in_bytes": 896789,
+          "expired": false,
+          "digest": "sha256:21aba1b719cf8b1f80e24ee88fa6d51f3a2fe9276e1d81caeb1ac2fd74fe6bea",
+          "workflow_run": {
+            "id": 45028129922,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-breakout-v1-20261122",
+            "head_sha": "bddc2671acc9484e2890b23f134f69727ecb085e"
+          },
+          "created_at": "2026-11-22T13:35:07Z"
+        },
+        {
+          "id": 14756258929,
+          "name": "oracle-candidate-v1-E-fresh-synthetic",
+          "size_in_bytes": 797500,
+          "expired": false,
+          "digest": "sha256:f02302c585cfb0ee30b681407ce897ff701d105de104434344b729c5ffc1ce06",
+          "workflow_run": {
+            "id": 45028129922,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-breakout-v1-20261122",
+            "head_sha": "bddc2671acc9484e2890b23f134f69727ecb085e"
+          },
+          "created_at": "2026-11-22T13:34:53Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45028585775,
+      "artifacts": [
+        {
+          "id": 14757076179,
+          "name": "oracle-candidate-v2-V1-fresh-synthetic",
+          "size_in_bytes": 774054,
+          "expired": false,
+          "digest": "sha256:37bf5d9e18f6882b9344f37aa79707a0e4cef1be776a150db849f452d9b740f7",
+          "workflow_run": {
+            "id": 45028585775,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-persistence-v2-20261122",
+            "head_sha": "e9ee72e4df3e1c55df7a2d235f25578a3dba186a"
+          },
+          "created_at": "2026-11-22T13:40:27Z"
+        },
+        {
+          "id": 14756722917,
+          "name": "oracle-candidate-v2-B-fresh-synthetic",
+          "size_in_bytes": 909812,
+          "expired": false,
+          "digest": "sha256:85eca491d1b17d1f80a59ebfe6a5f58fed751055f40cd0c47285a72c6179c4af",
+          "workflow_run": {
+            "id": 45028585775,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-persistence-v2-20261122",
+            "head_sha": "e9ee72e4df3e1c55df7a2d235f25578a3dba186a"
+          },
+          "created_at": "2026-11-22T13:40:27Z"
+        },
+        {
+          "id": 14756274776,
+          "name": "oracle-candidate-v2-V2-fresh-synthetic",
+          "size_in_bytes": 710418,
+          "expired": false,
+          "digest": "sha256:4c09061172873bf7c79fa4fc0ccb55847ba124593f8f5b6130deef6dae29e8d8",
+          "workflow_run": {
+            "id": 45028585775,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-persistence-v2-20261122",
+            "head_sha": "e9ee72e4df3e1c55df7a2d235f25578a3dba186a"
+          },
+          "created_at": "2026-11-22T13:40:32Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45028940067,
+      "artifacts": [
+        {
+          "id": 14756389819,
+          "name": "oracle-v2-h1-native-lookahead-check",
+          "size_in_bytes": 4123,
+          "expired": false,
+          "digest": "sha256:8e8de9c706b648cd1a5edcf6a82f2bc957381e41af59912a3ff544cdbf3a7ffd",
+          "workflow_run": {
+            "id": 45028940067,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-persistence-v2-20261122",
+            "head_sha": "f5f1738914c3106cf04a38f722bb942895b93387"
+          },
+          "created_at": "2026-11-22T13:44:09Z"
+        }
+      ]
+    },
+    {
+      "run_id": 45029241425,
+      "artifacts": [
+        {
+          "id": 14757221607,
+          "name": "oracle-v2-cost-only-ablation-H0-H1-H3",
+          "size_in_bytes": 1652986,
+          "expired": false,
+          "digest": "sha256:168108d66d42a17f5298f0e1cf0b0f4cc9bd48b30f9e9d9bbec9c7a3ba2c8e3e",
+          "workflow_run": {
+            "id": 45029241425,
+            "repository_id": 1455896337,
+            "head_repository_id": 1455896337,
+            "head_branch": "experiment/oracle-candidate-regime-persistence-v2-20261122",
+            "head_sha": "83ff75aa8b0d732153b35f42fac79e23178db4c0"
+          },
+          "created_at": "2026-11-22T13:48:20Z"
+        }
+      ]
+    }
+  ]
+}
