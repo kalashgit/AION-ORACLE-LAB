@@ -1,0 +1,35 @@
+{
+  "schema": "RegisteredCampaignExperiment/1",
+  "research_mode": "SYNTHETIC_ONLY",
+  "experiment_id": "AO-CYCLE-SYNTHETIC-COST-001",
+  "hypothesis": "Increasing modeled execution costs decreases net liquidation value for an otherwise identical passive 10%-capped spot study.",
+  "null_hypothesis": "Net liquidation value is unchanged by modeled execution costs.",
+  "data": {
+    "generator": "oracle_lab.harness.synthetic_bars",
+    "seed": 421,
+    "bars": 864,
+    "bar_minutes": 5,
+    "source_rights": "NO_EXTERNAL_MARKET_DATA"
+  },
+  "capital": {
+    "starting_usdt": 1000,
+    "position_budget_usdt": 100,
+    "no_leverage": true,
+    "market": "SYNTHETIC_BTC_USDT"
+  },
+  "costs": {
+    "fee_bps_per_side": 10,
+    "slippage_bps_per_side": 5,
+    "full_spread_bps": 10
+  },
+  "trial_cost_multipliers": [
+    1,
+    2,
+    5
+  ],
+  "max_trials": 3,
+  "execution_policy": "OFFLINE_NO_ORDERS",
+  "promotion_allowed": false,
+  "training_allowed": false,
+  "live_trading_allowed": false
+}
