@@ -35,7 +35,7 @@ class RejectedEvidence(ValueError):
 def _decimal(v, name, nullable=False):
     if nullable and v is None:
         return None
-    if not isinstance(v, str) or not re.fullmatch(r"-?(?:0|[1-9]\d*)(?:\.\d{1,15})?", v):
+    if not isinstance(v, str) or not re.fullmatch(r"-?(?:0|[1-9]\d*)(?:\.\d{1,110})?", v):
         raise RejectedEvidence(f"INVALID_DECIMAL_{name}")
     try:
         n = Decimal(v)
