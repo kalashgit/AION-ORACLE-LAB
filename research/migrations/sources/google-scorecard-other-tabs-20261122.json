@@ -1,0 +1,2883 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/1qZR8Sx0crU_RdrnMrhEA0DbbnnPjGMLm_rbsC6lbukw/edit",
+  "capture": "formatted cell values up to 200 rows x 26 columns; not formulas/formatting",
+  "tabs": [
+    {
+      "tab": "Dashboard",
+      "range": "Dashboard!A1:Z200",
+      "values": [
+        [
+          "AION GENESIS | PERFORMANCE & LEARNING SCORECARD"
+        ],
+        [
+          "Run 1: PR9 October  •  Run 2: PR10 same strategy + retrospective July–September  •  22 Nov 2026"
+        ],
+        [
+          "Headline KPI",
+          "Run 1 / PR9",
+          "Run 2 / PR10",
+          "Change",
+          "Stretch goal",
+          "Interpretation"
+        ],
+        [
+          "Net paper return, October",
+          "-5.91%",
+          "-5.91%",
+          "0.00%",
+          "≥+5% research success / +66.7% desired; horizon TBD",
+          "Same frozen rule; no strategy uplift"
+        ],
+        [
+          "Trades entered, October",
+          "144",
+          "144",
+          "0",
+          "Minimize conditional on profit",
+          "144 entry/exit round trips in each October replay"
+        ],
+        [
+          "Learning effectiveness (composite)",
+          "Not measured",
+          "Not measured",
+          "N/A",
+          "+95% vs prior run",
+          "Requires comparable return/trades/latency/CPU/memory/operations; not correction success rate"
+        ],
+        [
+          "Maximum drawdown, October",
+          "-5.92%",
+          "-5.92%",
+          "0.00%",
+          "Risk threshold TBD",
+          "Simulated; not eToro drawdown"
+        ],
+        [
+          "Strategy correction attempts",
+          "0",
+          "0",
+          "0",
+          "Count every proposal",
+          "PR10 added diagnostics, not a new rule"
+        ],
+        [
+          "Validated corrections",
+          "0",
+          "0",
+          "0",
+          "≥95% tested correction success, aspirational",
+          "Not rate-scorable with zero eligible corrections"
+        ],
+        [],
+        [
+          "RETROSPECTIVE WINDOWS | FROZEN GENESIS WICK RULE"
+        ],
+        [
+          "Window",
+          "Genesis net",
+          "Cash",
+          "SMA 10/30",
+          "Capped buy/hold",
+          "Data role / context"
+        ],
+        [
+          "2026 Jul",
+          "-6.31%",
+          "0.00%",
+          "-3.73%",
+          "-0.28%",
+          "PR10 DEVELOPMENT, retrospective"
+        ],
+        [
+          "2026 Aug",
+          "-5.26%",
+          "0.00%",
+          "-2.15%",
+          "1.95%",
+          "PR10 DEVELOPMENT, retrospective"
+        ],
+        [
+          "2026 Sep",
+          "-5.60%",
+          "0.00%",
+          "-3.07%",
+          "0.27%",
+          "PR10 VALIDATION, now exposed"
+        ],
+        [
+          "2026 Oct",
+          "-5.91%",
+          "0.00%",
+          "-3.09%",
+          "-0.59%",
+          "PR9 original; PR10 KNOWN OUTCOME"
+        ],
+        [],
+        [
+          "INTERPRETATION"
+        ],
+        [
+          "Run 1 vs Run 2: no strategy change. October net return and 144 entries are identical. July, August and September are distinct windows, not sequential learning versions."
+        ],
+        [],
+        [
+          "Targets need fixed evaluation horizon, exposure, drawdown bound, costs and eligible correction denominator before they become scoring gates."
+        ]
+      ]
+    },
+    {
+      "tab": "Run Register",
+      "range": "'Run Register'!A1:Z200",
+      "values": [
+        [
+          "RUN REGISTER  | one row per measured market window"
+        ],
+        [
+          "Run ID",
+          "Logged UTC",
+          "PR",
+          "Data provider",
+          "Market",
+          "Window / subset",
+          "Role at assessment",
+          "Rule version",
+          "Net return",
+          "Equity USDT",
+          "Entries",
+          "Exits",
+          "Max DD",
+          "Gross USDT",
+          "Costs USDT",
+          "Net positive trades",
+          "New strategy?",
+          "Evidence",
+          "Source"
+        ],
+        [
+          "R01-PR09",
+          "2026-11-22",
+          "#9",
+          "BINANCE_VISION spot",
+          "BTCUSDT",
+          "Oct later 3572 bars",
+          "INITIAL EVALUATION; now exposed",
+          "wick frozen v1",
+          "-5.9104%",
+          "940.895599",
+          "144",
+          "144",
+          "5.9205%",
+          null,
+          "57.481729",
+          "2",
+          "No",
+          "FAILED AFTER COSTS",
+          "https://github.com/kalashgit/AION-GENESYS/pull/9"
+        ],
+        [
+          "R02-PR10",
+          "2026-11-22",
+          "#10",
+          "BINANCE_VISION spot",
+          "BTCUSDT",
+          "Oct later 3572 bars",
+          "EXPOSED DIAGNOSTIC",
+          "wick frozen v1",
+          "-5.9104%",
+          "940.895599",
+          "144",
+          "144",
+          "5.9205%",
+          "-1.622672",
+          "57.481729",
+          "2",
+          "No",
+          "REPRODUCED, NOT LEARNED",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [
+          "R02-PR10",
+          "2026-11-22",
+          "#10",
+          "BINANCE_VISION spot",
+          "BTCUSDT",
+          "Jul 8928 bars",
+          "DEVELOPMENT retrospective",
+          "wick frozen v1",
+          "-6.3102%",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "No",
+          "FAILED AFTER COSTS",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [
+          "R02-PR10",
+          "2026-11-22",
+          "#10",
+          "BINANCE_VISION spot",
+          "BTCUSDT",
+          "Aug 8928 bars",
+          "DEVELOPMENT retrospective",
+          "wick frozen v1",
+          "-5.2604%",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "No",
+          "FAILED AFTER COSTS",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [
+          "R02-PR10",
+          "2026-11-22",
+          "#10",
+          "BINANCE_VISION spot",
+          "BTCUSDT",
+          "Sep 8640 bars",
+          "VALIDATION retrospective; exposed",
+          "wick frozen v1",
+          "-5.5997%",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "No",
+          "FAILED AFTER COSTS",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [
+          "R03-PR11",
+          "2026-11-22",
+          "#11",
+          "BINANCE_VISION spot",
+          "BTCUSDT",
+          "Jul shared 6528 scored bars",
+          "DEVELOPMENT retrospective; same-warmup",
+          "wick_sma_gate_v1",
+          "-4.3518%",
+          "956.481864",
+          "106",
+          "106",
+          "4.3518%",
+          "-1.205218",
+          "42.312918",
+          null,
+          "Yes; candidate",
+          "DIAGNOSTIC_LOSS_REDUCTION; NOT PROFITABLE",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Blank cells = not present in the published PR10 results. Do not infer counts/equity from unrelated windows."
+        ]
+      ]
+    },
+    {
+      "tab": "Learning Ledger",
+      "range": "'Learning Ledger'!A1:Z200",
+      "values": [
+        [
+          "LEARNING LEDGER | candidate vs frozen predecessor on the SAME untouched evaluation folds"
+        ],
+        [
+          "Iteration",
+          "PR",
+          "Frozen prior",
+          "New candidate",
+          "Ideas proposed",
+          "Eligible trials",
+          "Validated wins",
+          "Validated correction rate (secondary)",
+          "Prior OOS net",
+          "New OOS net",
+          "Uplift (pp)",
+          "Cash OOS",
+          "Excess-loss reduction",
+          "Unseen?",
+          "Learning verdict",
+          "Proof URL"
+        ],
+        [
+          "R01",
+          "#9",
+          "None",
+          "wick frozen v1",
+          "0",
+          "0",
+          "0",
+          "N/A",
+          null,
+          null,
+          null,
+          "0.00%",
+          null,
+          "No",
+          "First strategy baseline; no prior learning",
+          "https://github.com/kalashgit/AION-GENESYS/pull/9"
+        ],
+        [
+          "R02",
+          "#10",
+          "wick frozen v1",
+          "No revised candidate",
+          "0",
+          "0",
+          "0",
+          "N/A",
+          null,
+          null,
+          null,
+          "0.00%",
+          null,
+          "No",
+          "Test infrastructure improved, not trading strategy",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A"
+        ]
+      ]
+    },
+    {
+      "tab": "Metrics & Protocol",
+      "range": "'Metrics & Protocol'!A1:Z200",
+      "values": [
+        [
+          "METRICS, TARGETS & MEASUREMENT CONTRACT"
+        ],
+        [
+          "Metric",
+          "Definition",
+          "Target",
+          "When allowed to score",
+          "Why it exists"
+        ],
+        [
+          "Net paper return",
+          "(final liquidation-mark equity / starting capital) − 1, after all modeled fees/slippage/spread",
+          "Minimum ≥+5% net threshold; desired +66.7% net. Same fixed horizon and risk approval required.",
+          "Same dates/quote, full costs, risk budget; reserve truly unseen test",
+          "Trading-profit objective"
+        ],
+        [
+          "Trades entered",
+          "Count of filled simulated BUY entries, separately from exits",
+          "Minimum viable activity, conditional on returns",
+          "Report both absolute count and trades per 30 calendar days",
+          "Discourages costly churning"
+        ],
+        [
+          "Trades per 30 days",
+          "(filled entries / evaluated calendar days) × 30",
+          "Lower if net outcome/risk not worse",
+          "Window boundaries and gaps stated in UTC",
+          "Makes comparisons fair"
+        ],
+        [
+          "Net profit / trade",
+          "Sum of closed net P&L ÷ completed round trips",
+          "Positive",
+          "No count → N/A; open positions separately marked",
+          "Trade selection efficiency"
+        ],
+        [
+          "Learning effectiveness (composite v2)",
+          "100 × [50% × relative return progress + 20% × entry reduction + 15% × p95 latency reduction + 10% × resource savings + 5% × hot-path operations savings]",
+          "+95% relative efficiency improvement vs previous comparable run",
+          "Only with same fixed dates, source, cost, capital, hardware and complete telemetry; score remains N/A otherwise",
+          "Owner-defined faster, lighter, fewer trades + higher return"
+        ],
+        [
+          "Return progress denominator",
+          "(new net − old net) ÷ max(|old net|, 1 percentage point); allows comparison when prior run is negative",
+          "Higher is better",
+          "This is a relative diagnostic; does not establish profitable learning",
+          "Makes negative baseline comparable without divide-by-zero"
+        ],
+        [
+          "Validated learning verdict",
+          "Efficiency uplift AND positive net after costs AND baseline/control outperformance AND appropriate untouched evaluation / rights",
+          "PASS only with all gates",
+          "No-trade / all-cash cannot win by reducing trades; if negative return, DIAGNOSTIC_ONLY",
+          "Separates engineering efficiency from trading profitability"
+        ],
+        [
+          "Learning verdict",
+          "Validated strategy improvement after costs and under risk, not just a new diagnostic/testing report",
+          "PASS / FAIL / INSUFFICIENT / N/A",
+          "No candidate / no unseen evaluation → N/A",
+          "Prevents false learning attribution"
+        ],
+        [
+          "Maximum drawdown",
+          "Worst peak-to-trough loss in liquidation-marked paper equity",
+          "Risk cap pending",
+          "Same sampling frequency, show model assumptions",
+          "Survival matters"
+        ],
+        [
+          "Gross-vs-net cost attribution",
+          "Fixed quantity gross P&L − fees − modeled spread − slippage = net P&L",
+          "Lower drag without hiding negative gross performance",
+          "Gross 0× diagnostic not executable",
+          "Root-cause failures"
+        ],
+        [
+          "Net winner rate",
+          "Positive net closed trades / total completed round trips",
+          "Secondary",
+          "Missing/zero sample → N/A",
+          "Different from pattern classification accuracy"
+        ],
+        [
+          "Exposure & turnover",
+          "Time in market, capital use and cumulative notional churn",
+          "Efficient exposure",
+          "Capital-match caveat; same simulation",
+          "Comparator fairness"
+        ],
+        [
+          "Uncertainty / novelty",
+          "Bootstrap day blocks, chronological walk-forward, holdout access history",
+          "Unseen challenge and enough power",
+          "Once tested, history becomes exposed; checksum != sealed holdout",
+          "Stops overfitting"
+        ],
+        [
+          "Research rights",
+          "Binance Vision is personal nonproduction historical research ONLY",
+          "Separate authority for live feeds / strategy-derived use",
+          "Never route Vision-derived results into live eToro orders",
+          "Source scope"
+        ],
+        [],
+        [
+          "Decision latency",
+          "p50/p95 wall milliseconds per signal decision after warmup, same machine and batch",
+          "Lower if results maintained",
+          "Record process/runtime/version, warmup and repetitions; never assert measured if not instrumented",
+          "User wants faster response"
+        ],
+        [
+          "Compute load / model strain",
+          "CPU seconds/10k bars, peak RSS MB, model calls and tokens/10k bars, optional energy budget",
+          "Lower with equivalent or better net outcome",
+          "Zero model calls is a measured 0, not missing; exclude 0/0 from savings calculation consistently",
+          "Lighter Genesis runtime"
+        ],
+        [
+          "Programming/maintenance load",
+          "Hot-path operations/10k bars as complexity proxy, changed LOC and new dependencies as maintenance diagnostics",
+          "Less runtime complexity, tests intact",
+          "Changing code volume alone is not proof of learning; record LOC/dependencies, never reward deleting tests",
+          "Simpler engineering for same outcome"
+        ],
+        [
+          "Trading effectiveness",
+          "Net paper return = (final liquidation-mark portfolio equity / initial paper equity) − 1 after fees/slippage/spread",
+          "Higher; +67% aspiration needs a fixed horizon",
+          "Must compare same evaluation window, risk, product, quote currency and cost assumptions",
+          "Pure trading performance"
+        ],
+        [
+          "Run comparison",
+          "PR9 to PR10 October: return -5.910440% → -5.910440%; entries 144 → 144; CPU/latency not measured",
+          "No measured LE score yet",
+          "PR10 testing code advanced, but the rule did not change",
+          "Avoid calling tool improvement strategy learning"
+        ],
+        [
+          "Learning target semantics",
+          "95% is a desired composite improvement in outcome per effort vs last comparable version, not a successful-strategy percentage",
+          "Stretch ambition, not a validity gate",
+          "Still require positive net return + outperformance + new evidence to declare successful learning",
+          "Restores owner's precise meaning"
+        ],
+        [
+          "October baseline clarity",
+          "SMA -3.085288%, cash 0%; both outperform wick -5.910440%, but SMA is still negative after costs",
+          "Use as benchmark, not inferred alpha",
+          "Source is Binance Vision personal nonproduction research only",
+          "Simple strategies are useful competitors but not guarantees"
+        ]
+      ]
+    },
+    {
+      "tab": "Sources & Rights",
+      "range": "'Sources & Rights'!A1:Z200",
+      "values": [
+        [
+          "EVIDENCE, SOURCE PERMISSIONS & RESULTS"
+        ],
+        [
+          "Source",
+          "URL",
+          "As-of",
+          "Rights/limitations",
+          "Supporting statement"
+        ],
+        [
+          "PR9 verification",
+          "https://github.com/kalashgit/AION-GENESYS/blob/8319e2433b2049c9981f9fcb60eb78c638f1b0dd/docs/PR9-BINANCE-VISION-RESEARCH.md",
+          "2026-11-22",
+          "PERSONAL_NONPRODUCTION_BACKTEST_ONLY",
+          "October initial frozen test, 144 round trips"
+        ],
+        [
+          "PR10 verification",
+          "https://github.com/kalashgit/AION-GENESYS/blob/c231c15bca83294d20a9833892a0e43fef8094c9/docs/PR10-EVALUATION-LAB-VERIFICATION.md",
+          "2026-11-22",
+          "Same research scope",
+          "October gross vs net; July, August, September"
+        ],
+        [
+          "PR10 CI",
+          "https://github.com/kalashgit/AION-GENESYS/actions/runs/45004087337",
+          "2026-11-22",
+          "Fixture/mocks in public CI",
+          "216 Python, 37 Node, 33 Chromium, build, 168 hashes"
+        ],
+        [
+          "Binance data terms",
+          "https://github.com/binance/binance-public-data/blob/master/TERMS_AND_CONDITIONS.md",
+          "2026-11-22",
+          "CC BY-NC-SA 4.0 and specific Vision Terms",
+          "Personal backtest allowed; live execution prohibited"
+        ],
+        [
+          "Dataset archive",
+          "https://github.com/binance/binance-public-data",
+          "2026-11-22",
+          "Source ZIP/checksum verified locally",
+          "PR9 Oct 8928 bars; PR10 Jul–Sep 26496 bars"
+        ],
+        [
+          "Current scorecard authority",
+          "User goals stated 2026-11-22",
+          "2026-11-22",
+          "Goal definitions provisional",
+          "+67% target horizon TBD; 95% learning denominator TBD"
+        ],
+        [
+          "Research permission request (UNSENT)",
+          "https://docs.google.com/document/d/1g6bTQ7LKB0SuS5U0eq5Mp1NkkdWfI_Ef94peXkXe8go/edit",
+          "2026-11-22",
+          "REQUEST DRAFT ONLY — NO APPROVAL",
+          "Binance Vision personal noncommercial 4-control group scope; asks written ML/PPO training, GitHub hosted runner, retention and future-derivative-use clarification"
+        ],
+        [
+          "Binance dataset clauses 3.4 / 4.1",
+          "https://github.com/binance/binance-public-data/blob/master/TERMS_AND_CONDITIONS.md",
+          "2026-11-22",
+          "PERSONAL BACKTEST & NONCOMMERCIAL DATA SCIENCE EVAL EXPRESSLY LISTED; AI TRAINING SCOPE UNCLEAR",
+          "A commercial enterprise license requires separate written agreement; do not equate public code license with data permission"
+        ],
+        [
+          "Binance licensing escalation",
+          "https://www.binance.com/en/support/",
+          "2026-11-22",
+          "OFFICIAL SUPPORT CASE REQUEST RECOMMENDED",
+          "GitHub maintainer's licensing emails reported bounced/restricted; request case ID and official written authorized response"
+        ]
+      ]
+    },
+    {
+      "tab": "Effectiveness v2",
+      "range": "'Effectiveness v2'!A1:Z200",
+      "values": [
+        [
+          "GENESIS EFFECTIVENESS V2 | trading returns separately from learning efficiency"
+        ],
+        [
+          "Run",
+          "Candidate ID",
+          "Previous candidate",
+          "Comparable scenario",
+          "Net return (after costs)",
+          "Filled entries",
+          "P95 signal ms",
+          "CPU sec / 10k bars",
+          "Peak RSS MB",
+          "Model calls / 10k bars",
+          "Model tokens / 10k bars",
+          "Hot-path ops / 10k bars",
+          "Changed LOC",
+          "Cash benchmark",
+          "Return gain (pp)",
+          "Relative return progress",
+          "Entry reduction",
+          "Latency reduction",
+          "Compute+model saving",
+          "Hot-path saving",
+          "Composite LE change (%)",
+          "Trading status",
+          "Evidence status",
+          "Proof"
+        ],
+        [
+          "Run 1 / PR9",
+          "wick-v1",
+          "None",
+          "Oct later 3572 bars",
+          "-5.910%",
+          "144",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "N/A",
+          "FAILED AFTER COSTS",
+          "Known historical October",
+          "https://github.com/kalashgit/AION-GENESYS/pull/9"
+        ],
+        [
+          "Run 2 / PR10",
+          "wick-v1",
+          "wick-v1",
+          "Oct later 3572 bars",
+          "-5.910%",
+          "144",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0",
+          "0.0%",
+          "0.0%",
+          null,
+          null,
+          null,
+          "N/A",
+          "FAILED AFTER COSTS",
+          "No new strategy; performance instruments absent",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [
+          "Run 3 / PR11",
+          "wick_sma_gate_v1",
+          "wick-v1 (July recomputed)",
+          "July 6528 shared scored bars; NOT Oct Run2",
+          "-4.3518%",
+          "106",
+          "0.004972",
+          "0.046314",
+          "29.78125",
+          "0",
+          "0",
+          "262699.1422",
+          "631",
+          "0",
+          "6.993937",
+          "61.6437%",
+          "63.0662%",
+          "-18.5503%",
+          "-8.8600%",
+          "-22.9742%",
+          "38.62%",
+          "DIAGNOSTIC EFFICIENCY GAIN",
+          "NET NEGATIVE; NOT VALIDATED TRADING LEARNING",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [],
+        [
+          "COMPOSITE PROVISIONAL WEIGHTS: 50% relative after-cost return progress; 20% fewer entries; 15% faster p95 decision latency; 10% lower CPU/memory/model usage; 5% fewer hot-path operations."
+        ],
+        [
+          "Composite = 100 × (0.50×P + 0.20×Q + 0.15×R + 0.10×S + 0.05×T). An uplift from -5.91% to -3% is research progress, NOT verified profitable learning."
+        ],
+        [
+          "All metrics require SAME market/date span, fees, allocation, hardware, input and measured CPU/memory/model telemetry. Equal complexity code is not 'trained knowledge'."
+        ],
+        [
+          "No trades / cash-only is NOT a learning success; no new strategy, zero data, or mismatched scenarios = N/A. Gate confirmed learning on positive net after costs, controls, risk and unseen evidence."
+        ],
+        [
+          "Updated founder targets (22 Nov): ≥+5% net minimum success; +66.7% desired; +95% relative efficiency aspiration. Fixed horizon/risk/independent evidence still required."
+        ],
+        [
+          "Model calls and token counts: zero is valid if the engine does not use an LLM; count them separately and do not claim lower-model strain for missing telemetry."
+        ]
+      ]
+    },
+    {
+      "tab": "Founder Report",
+      "range": "'Founder Report'!A1:Z200",
+      "values": [
+        [
+          "GENESIS · FOUNDER EVALUATION REPORT | Notion equations"
+        ],
+        [
+          "Two comparable October runs — PR9 vs PR10; same frozen strategy. Values are hypothetical, after assumed costs."
+        ],
+        [
+          "Primary metric",
+          "Run 1 / PR9",
+          "Run 2 / PR10",
+          "Run-on-run change",
+          "Units / interpretation",
+          "Official equation"
+        ],
+        [
+          "Starting paper equity",
+          "1000",
+          "1000",
+          null,
+          "USDT",
+          "V_start"
+        ],
+        [
+          "Ending paper equity",
+          "940.895599",
+          "940.895599",
+          "0",
+          "USDT",
+          "V_end"
+        ],
+        [
+          "Portfolio return R_pct",
+          "-5.9104%",
+          "-5.9104%",
+          "0",
+          "Run return shown as %; change shown as percentage points",
+          "((V_end - V_start) / V_start) × 100"
+        ],
+        [
+          "Trades completed N_trades",
+          "144",
+          "144",
+          "0",
+          "Completed round trips; each entry+exit = one trade",
+          "count(completed/filled trades)"
+        ],
+        [
+          "Learning effectiveness: A",
+          null,
+          "0",
+          null,
+          "Percentage points of R_pct change per strategy/evaluation iteration; one step here",
+          "(M_post - M_pre) / delta_iterations"
+        ],
+        [
+          "Paper loss magnitude",
+          "59.104401",
+          "59.104401",
+          "0",
+          "USDT; operational definition selected for LE B (Notion does not define Loss)",
+          "max(0,V_start - V_end)"
+        ],
+        [
+          "Learning effectiveness: B",
+          null,
+          "0.0000%",
+          null,
+          "Fraction displayed as %; loss-reduction on matched scenario",
+          "1 - (Loss_late / Loss_early)"
+        ],
+        [
+          "Broader learning efficiency",
+          null,
+          "NOT MEASURED",
+          null,
+          "Return + trades + CPU + memory + latency + model workload",
+          "Separate chat-defined composite in Effectiveness v2"
+        ],
+        [
+          "Maximum drawdown",
+          "5.9205%",
+          "5.9205%",
+          "0.0000%",
+          "fraction displayed as %",
+          "MDD = max over t1<=t2 [(V(t1)-V(t2))/V(t1)]"
+        ],
+        [
+          "Trading effectiveness",
+          null,
+          "-5.910440% net",
+          null,
+          "After modeled costs; same result as PR9",
+          "Net paper portfolio return"
+        ],
+        [],
+        [
+          "STANDARD SHORT CHAT OUTPUT AFTER EVERY EVALUATION"
+        ],
+        [
+          "Return %  |  Completed trades  |  Learning A (pp/iteration)  |  Learning B (loss reduction %)  |  Efficiency (if measured)"
+        ],
+        [
+          "Every run: date/window, paper/live status, baseline version and comparison. No false 'learning' if candidate not changed."
+        ],
+        [
+          "Authoritative source",
+          "https://app.notion.com/p/420f639e2373807f91d0e3a9b7b83fd2?pvs=204"
+        ],
+        [
+          "Evidence PR9",
+          "https://github.com/kalashgit/AION-GENESYS/pull/9"
+        ],
+        [
+          "Evidence PR10",
+          "https://github.com/kalashgit/AION-GENESYS/pull/10"
+        ],
+        [],
+        [
+          "RUN 3 / PR11 | FOUNDER HEADLINE (JULY SHARED WINDOW; PAPER; separate from PR9/PR10 October)"
+        ],
+        [
+          "Metric",
+          "Frozen prior same July",
+          "Run 3 wick+SMA July",
+          "Change / LE",
+          "Interpretation",
+          "Source"
+        ],
+        [
+          "Net paper portfolio return",
+          "-11.3458%",
+          "-4.3518%",
+          "6.993937",
+          "+6.993937 percentage points, NOT +6.99% portfolio profit",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Completed trades",
+          "287",
+          "106",
+          "-181",
+          "Each completed round trip = 1 trade",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Learning A: Return uplift, pp/iteration",
+          null,
+          null,
+          "6.993937",
+          "One registered candidate iteration",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Learning B: Paper loss reduction",
+          null,
+          null,
+          "61.6437%",
+          "1 − 43.518136 / 113.45751 = 61.643670%",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Broader learning effectiveness",
+          null,
+          null,
+          "38.6178%",
+          "Weighted provisional efficiency; still net loss",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Trading learning verdict",
+          "NEGATIVE",
+          "NEGATIVE",
+          "DIAGNOSTIC ONLY",
+          "All three Genesis candidates remain negative in six monthly windows",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Independent EMA/Donchian control evidence",
+          "Aug positive",
+          "Sep positive",
+          "Other 4 months negative",
+          "No transfer or promotion into Genesis",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ]
+      ]
+    },
+    {
+      "tab": "Notion Equations",
+      "range": "'Notion Equations'!A1:Z200",
+      "values": [
+        [
+          "CANONICAL NOTION EQUATIONS | user-authored · accessed Nov 22 2026"
+        ],
+        [
+          "Metric",
+          "Equation as authored in Notion",
+          "Variables / explicit qualification",
+          "Current Run 2 output",
+          "Context / source"
+        ],
+        [
+          "Percentage of Return (R_pct)",
+          "R_pct = ((V_end - V_start) / V_start) * 100",
+          "V_start = starting equity; V_end = ending equity",
+          "-5.9104%",
+          "Run2 October paper portfolio"
+        ],
+        [
+          "Number of Trades Completed (N_trades)",
+          "N_trades = count of completed/filled trades in the experiment window",
+          "Notion allows round trip = 1 or entry/exit legs = 1 each. Here round trip = 1.",
+          "144",
+          "Run2 Oct: 144 round trips, not 288 legs"
+        ],
+        [
+          "Learning Effectiveness (LE), Option A",
+          "LE = (M_post - M_pre) / delta_iterations",
+          "M = target metric (R_pct, Sharpe, Expectancy). Current comparison uses R_pct, 1 step; units: pp/iteration.",
+          "0",
+          "Same frozen rule: zero change is not evidence of learning"
+        ],
+        [
+          "Learning Effectiveness (LE), Option B",
+          "LE = 1 - (Loss_late / Loss_early)",
+          "Notion does not define Loss. Here operationalized as max(0,V_start-V_end) in USDT; denominator must be >0.",
+          "0.0000%",
+          "0% relative reduction in paper loss"
+        ],
+        [
+          "Sharpe Ratio",
+          "S = (mean(R_p - R_f) / std(R_p - R_f)) * sqrt(N)",
+          "Periodic returns R_p; risk-free R_f; appropriate sample definition N.",
+          "NOT MEASURED",
+          "Needs return series, risk-free assumption and sample frequency"
+        ],
+        [
+          "Sortino Ratio",
+          "Sortino = (mean(R_p - R_target) / downside_dev(R_p, R_target)) * sqrt(N)",
+          "Periodic returns, target R_target, downside deviation.",
+          "NOT MEASURED",
+          "Requires a consistent periodic-return convention"
+        ],
+        [
+          "Max Drawdown (MDD)",
+          "MDD = max over t1 <= t2 of (V(t1) - V(t2)) / V(t1)",
+          "Peak-to-trough value of portfolio equity, evaluated on same interval.",
+          "5.9205%",
+          "Run2 October paper drawdown"
+        ],
+        [
+          "Calmar Ratio",
+          "Calmar = R_ann / MDD",
+          "Annualized return / maximum drawdown; period must support annualization.",
+          "NOT MEASURED",
+          "Short sample cannot justify unsupported annualization"
+        ],
+        [
+          "Profit Factor",
+          "PF = sum(PnL of winning trades) / abs(sum(PnL of losing trades))",
+          "Requires summed signed realized net PnL by round trip.",
+          "NOT RECORDED HERE",
+          "PR10 diagnostics may have values; do not fabricate"
+        ],
+        [
+          "Expectancy",
+          "E = (p_win * avg_win) - (p_loss * avg_loss)",
+          "avg_win > 0, avg_loss > 0; rates consistent with trade-level PnL units.",
+          "NOT RECORDED HERE",
+          "Requires positive and negative PnL distribution"
+        ],
+        [
+          "Slippage",
+          "Slippage_i = P_i - P_ref_i",
+          "P_i fill price; P_ref_i reference price. PR10 used modeled—not executed—slippage.",
+          "MODEL ASSUMPTION",
+          "No real broker fills in these runs"
+        ],
+        [
+          "Turnover",
+          "Turnover = sum(|q_i| * P_i) / (0.5 * (V_start + V_end))",
+          "Sum of absolute traded notionals divided by average portfolio equity.",
+          "NOT RECORDED HERE",
+          "Requires executed/simulated transaction quantities and prices"
+        ],
+        [],
+        [
+          "Notion source",
+          "https://app.notion.com/p/420f639e2373807f91d0e3a9b7b83fd2?pvs=204"
+        ],
+        [
+          "Existing supplemental metrics",
+          "Effectiveness v2 tab retains separate user-defined composite: return, trades, speed, CPU, memory, model work. Not a Notion-authored equation."
+        ]
+      ]
+    },
+    {
+      "tab": "Run 3 Measured",
+      "range": "'Run 3 Measured'!A1:Z200",
+      "values": [
+        [
+          "RUN 3 | ACTUAL MEASURED HISTORICAL PAPER EXPERIMENT · PR11 · 2026-11-22"
+        ],
+        [
+          "Data: Binance Vision BTCUSDT spot; after assumed 1× costs; same 1000 USDT starting paper and 200h common 4h warmup. No live fills."
+        ],
+        [
+          "Month",
+          "Frozen wick",
+          "SMA10/30",
+          "Wick+SMA",
+          "Cooldown",
+          "Hysteresis",
+          "EMA20/50 4h",
+          "Donchian20/10 4h",
+          "Capped buy/hold",
+          "Cash",
+          "Evidence classification"
+        ],
+        [
+          "2026-07",
+          "-11.3458%",
+          "-6.3444%",
+          "-4.3518%",
+          "-7.7870%",
+          "-4.6471%",
+          "-0.1010%",
+          "-0.5344%",
+          "-0.0571%",
+          "0.0000%",
+          "DEVELOPMENT"
+        ],
+        [
+          "2026-08",
+          "-8.3345%",
+          "-3.6040%",
+          "-2.8651%",
+          "-5.7136%",
+          "-1.9070%",
+          "1.9170%",
+          "1.3921%",
+          "2.0541%",
+          "0.0000%",
+          "DEVELOPMENT"
+        ],
+        [
+          "2026-09",
+          "-9.7984%",
+          "-5.8873%",
+          "-3.4943%",
+          "-6.3026%",
+          "-3.7998%",
+          "0.2568%",
+          "0.3636%",
+          "0.4865%",
+          "0.0000%",
+          "EXPOSED DIAGNOSTIC"
+        ],
+        [
+          "2026-10",
+          "-11.0666%",
+          "-5.9284%",
+          "-3.9144%",
+          "-7.9318%",
+          "-4.3382%",
+          "-0.4080%",
+          "-0.8786%",
+          "-0.6492%",
+          "0.0000%",
+          "EXPOSED DIAGNOSTIC"
+        ],
+        [
+          "2026-05",
+          "-10.7104%",
+          "-6.2914%",
+          "-3.9671%",
+          "-7.3707%",
+          "-4.4143%",
+          "-0.4322%",
+          "-0.4498%",
+          "-0.8706%",
+          "0.0000%",
+          "RETROSPECTIVE CHALLENGE; EXPOSED AFTER READ"
+        ],
+        [
+          "2026-06",
+          "-9.7982%",
+          "-5.4418%",
+          "-3.3748%",
+          "-6.7059%",
+          "-4.3406%",
+          "-0.4634%",
+          "-0.3251%",
+          "-0.7429%",
+          "0.0000%",
+          "RETROSPECTIVE CHALLENGE; EXPOSED AFTER READ"
+        ],
+        [],
+        [
+          "JULY FOUNDER REPORT | these predecessor values are RECOMPUTED FOR THE SAME NEW WINDOW, not PR10 October"
+        ],
+        [
+          "Strategy",
+          "Prior rule",
+          "Previous net %",
+          "Current net %",
+          "Previous trades",
+          "Current trades",
+          "Return uplift pp",
+          "Learning B loss reduction",
+          "Efficiency composite",
+          "Promotion verdict",
+          "Evidence"
+        ],
+        [
+          "Wick + SMA",
+          "Frozen wick",
+          "-11.3458%",
+          "-4.3518%",
+          "287",
+          "106",
+          "6.993937",
+          "61.6437%",
+          "38.6178%",
+          "DIAGNOSTIC ONLY; still net negative",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "Wick cooldown",
+          "Frozen wick",
+          "-11.3458%",
+          "-7.7870%",
+          "287",
+          "198",
+          "3.558767",
+          "31.3665%",
+          "21.8507%",
+          "DIAGNOSTIC ONLY; still net negative",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "SMA hysteresis",
+          "SMA10/30",
+          "-6.3444%",
+          "-4.6471%",
+          "146",
+          "99",
+          "1.697268",
+          "26.7524%",
+          "38.6194%",
+          "DIAGNOSTIC ONLY; still net negative",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [],
+        [
+          "PRIMARY TELEMETRY | JULY | same 6528 scored 5m bars; 5 fresh-process profiling reps; no model calls"
+        ],
+        [
+          "Rule",
+          "p95 ms",
+          "CPU sec/10k",
+          "Peak RSS MiB",
+          "Work events/10k",
+          "Model calls/10k",
+          "Model tokens/10k",
+          "Completed trades",
+          "Return after costs",
+          "Scope",
+          "Notes"
+        ],
+        [
+          "Frozen wick",
+          "0.004194",
+          "0.039334",
+          "29.789062",
+          "213621.3235",
+          "0",
+          "0",
+          "287",
+          "-11.3458%",
+          "PAPER",
+          "Baseline for wick variants"
+        ],
+        [
+          "Wick + SMA",
+          "0.004972",
+          "0.046314",
+          "29.78125",
+          "262699.1422",
+          "0",
+          "0",
+          "106",
+          "-4.3518%",
+          "PAPER",
+          "Slower and more work despite fewer trades"
+        ],
+        [
+          "Wick cooldown",
+          "0.004113",
+          "0.041963",
+          "29.792969",
+          "213174.0196",
+          "0",
+          "0",
+          "198",
+          "-7.7870%",
+          "PAPER",
+          "More efficient in some aspects, negative return"
+        ],
+        [
+          "SMA baseline",
+          "0.006903",
+          "0.071956",
+          "29.769531",
+          "430000",
+          "0",
+          "0",
+          "146",
+          "-6.3444%",
+          "PAPER",
+          "Baseline for hysteresis"
+        ],
+        [
+          "SMA hysteresis",
+          "0.001599",
+          "0.01738",
+          "29.777344",
+          "130000",
+          "0",
+          "0",
+          "99",
+          "-4.6471%",
+          "PAPER",
+          "Still negative after costs"
+        ],
+        [],
+        [
+          "PR11 EVIDENCE | actual six-month experiment: 52992 verified 5m bars, 38592 scored, 3240 deterministic full replay executions (not independent markets)"
+        ],
+        [
+          "Exact GitHub report",
+          "https://github.com/kalashgit/AION-GENESYS/blob/cca6b24b6df46066a90d23e1421fa48486f4d4a3/docs/PR11-STRATEGY-ITERATION-VERIFICATION.md"
+        ],
+        [
+          "CI passed, final head",
+          "https://github.com/kalashgit/AION-GENESYS/actions/runs/45014440229"
+        ],
+        [
+          "Exact head",
+          "cca6b24b6df46066a90d23e1421fa48486f4d4a3"
+        ],
+        [
+          "Data and broker rights",
+          "PERSONAL NON-PRODUCTION RESEARCH ONLY. No eToro or live order results."
+        ],
+        [
+          "Important limitation",
+          "Multiple months/strategies are historical retrospective; none is independent forward live-paper evidence. Positive EMA/Donchian months do not prove profitability."
+        ]
+      ]
+    },
+    {
+      "tab": "Run 4 Protocol",
+      "range": "'Run 4 Protocol'!A1:Z200",
+      "values": [
+        [
+          "RUN 4 · REGISTERED CONTROLLED EXPERIMENT | ONE INDEPENDENT VARIABLE"
+        ],
+        [
+          "Date 2026-11-22 · PR12 prepared · no new market evaluation or profit observations yet"
+        ],
+        [
+          "Field",
+          "Planned value",
+          "Status",
+          "Scientific meaning",
+          "Evidence / source"
+        ],
+        [
+          "Experiment ID",
+          "run-04-2026-11-22-single-variable-ema-regime",
+          "PREPARED_NOT_TESTED",
+          "One matched, paired causal A/B comparison",
+          "https://github.com/kalashgit/AION-GENESYS/pull/12"
+        ],
+        [
+          "Independent variable",
+          "4h EMA20/50 trend entry gate; ON versus OFF",
+          "PREREGISTERED",
+          "Only entry permission changes; same 5m wick+SMA and fixed exits",
+          "https://github.com/kalashgit/AION-GENESYS/blob/feature/pr12-controlled-bot-benchmark/genesis_knowledge/strategy_iterations/run4_registration.json"
+        ],
+        [
+          "Internal causal control (NOT Notion Group A)",
+          "wick_sma_gate_v1 + 4h gate OFF",
+          "SEPARATE ONE-VARIABLE EXPERIMENT",
+          "Baseline treatment predecessor; same 4h feature computation in both groups"
+        ],
+        [
+          "Internal causal treatment (NOT Notion Treatment)",
+          "wick_sma_gate_v1 + 4h gate ON",
+          "NOT IMPLEMENTED",
+          "Completed 4h EMA20 > EMA50 and close > EMA50 at entry decision"
+        ],
+        [
+          "Internal independent references (NOT Notion Group B)",
+          "Cash, capped hold, SMA10/30, 4h EMA, Donchian",
+          "FROZEN BENCHMARKS",
+          "Benchmark only; NOT additional manipulated variables"
+        ],
+        [
+          "Notion five-group experiment",
+          "Group A buy-hold; B Freqtrade EMA/RSI; C FreqAI; D FinRL PPO; Treatment Genesis v1",
+          "NEW PRIMARY PRIORITY",
+          "No audited BTC returns, no licensed live broker use",
+          "https://docs.google.com/document/d/1KTcA0U9THUUzUxXUCAVgpL9y8IhA2PEDmLdUmnBtFAI/edit"
+        ],
+        [
+          "Trading success threshold",
+          "5.0%",
+          "PROPOSED",
+          "Net profit >=+5% on founder-approved fixed matched horizon and risk restrictions"
+        ],
+        [
+          "Desired portfolio target",
+          "66.7%",
+          "ASPIRATIONAL",
+          "Net +66.7% target, not proven reachable"
+        ],
+        [
+          "Historical evaluation horizon (NOT 48h sprint duration)",
+          "Same fixed UTC time window for all five groups, to be registered before scoring; NOT necessarily 30d",
+          "PENDING PRE-TRIAL WINDOW SELECTION",
+          "Cannot call partial July window a 30-day success"
+        ],
+        [
+          "Research risk guardrail",
+          "Max 10% drawdown as test assumption",
+          "PROPOSED",
+          "Not founder-approved permanent risk tolerance"
+        ],
+        [
+          "Historical data scope",
+          "BTCUSDT SPOT Binance Vision only, personal nonproduction",
+          "RIGHTS-GATED",
+          "No training/live signals/eToro execution"
+        ],
+        [
+          "Economic constants",
+          "1000 USDT, <=100 USDT opening, long/flat one position, 1x costs 10bps fee side + 5bps slippage side + 10bps full spread",
+          "FROZEN RESEARCH MODEL",
+          "Same in both groups; 2x and 5x stress also logged"
+        ],
+        [
+          "Pre-warm & fills",
+          "50 completed UTC 4h candles; next contiguous 5m bar open",
+          "LOCKED BEFORE SCORING",
+          "No forming bars or missing candle inventions"
+        ],
+        [
+          "Previously inspected periods",
+          "May–Oct 2026",
+          "EXPOSED RETROSPECTIVE",
+          "Cannot be called untouched test after viewing results"
+        ],
+        [
+          "Forward candidate period",
+          "December 2026 / January 2027; future archives when available",
+          "NOT AVAILABLE",
+          "Real paper rights and independent evidence separate"
+        ],
+        [
+          "Reproducibility",
+          "20× deterministic replay per locked input, 5 matched profiling repetitions",
+          "REGISTERED",
+          "Multiple replay runs are not independent market samples"
+        ],
+        [
+          "Founder Notion control-group headline",
+          "R_pct; completed round-trips; LE_walkforward=(M_second_half-M_first_half)/N_training_cycles; plus separate LE-A, LE-B and efficiency",
+          "REQUIRED; ZERO CYCLES -> N/A",
+          "No fabricated values, no profitable learning claims on a single viewed month"
+        ],
+        [],
+        [
+          "CONTROLLED TRIAL LOG | RESERVED ROWS — fill only after actual run and evidence"
+        ],
+        [
+          "Trial ID",
+          "Date UTC",
+          "Control hash",
+          "Treatment hash",
+          "Source+period",
+          "Variable changed",
+          "Control net %",
+          "Treatment net %",
+          "Delta pp",
+          "Control trades",
+          "Treatment trades",
+          "MDD",
+          "Efficiency %",
+          "Status",
+          "GitHub evidence"
+        ],
+        [
+          "T01",
+          null,
+          null,
+          null,
+          "30d window TBD",
+          "4h EMA filter OFF → ON",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "NOT RUN",
+          "https://github.com/kalashgit/AION-GENESYS/pull/12"
+        ],
+        [
+          "T02",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "RESERVED"
+        ],
+        [
+          "T03",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "RESERVED"
+        ],
+        [
+          "T04",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "RESERVED"
+        ],
+        [
+          "T05",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "RESERVED"
+        ],
+        [
+          "T06",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "RESERVED"
+        ]
+      ]
+    },
+    {
+      "tab": "Trader Research",
+      "range": "'Trader Research'!A1:Z200",
+      "values": [
+        [
+          "OPEN-SOURCE TRADER RESEARCH | REPORTED RETURNS ≠ COMPARABLE RESULTS"
+        ],
+        [
+          "Founder Academy reference: https://docs.google.com/document/d/1KTcA0U9THUUzUxXUCAVgpL9y8IhA2PEDmLdUmnBtFAI/edit"
+        ],
+        [
+          "Project",
+          "Category",
+          "License",
+          "Reported performance",
+          "Market & status",
+          "What it actually does",
+          "Control on our 5m spot data?",
+          "Decision",
+          "Source"
+        ],
+        [
+          "FinRL-X / FinRL-Trading",
+          "Modular portfolio ML/DRL",
+          "Apache-2.0",
+          "+19.76% self-reported total paper Oct 2025–Mar 2026, 12.22% DD",
+          "US equities/multiasset Alpaca PAPER, not BTC spot",
+          "Weight-vector, stock selection, adaptive rotation, risk overlay",
+          "No, different market/time/risk",
+          "ARCHITECTURE REFERENCE NOT WINNER",
+          "https://github.com/AI4Finance-Foundation/FinRL-Trading"
+        ],
+        [
+          "Freqtrade + FreqAI",
+          "Crypto bot / rolling ML",
+          "GPL-3.0",
+          "No universal bot return; example is explicitly nonproduction",
+          "Crypto strategy-specific; results depend on pair/model",
+          "Static technical rules; FreqAI periodic model train/predict and lookahead checks",
+          "Conditional static reference after license and common data review",
+          "FIRST EXTERNAL BOT STUDY; TRAINING BLOCKED",
+          "https://github.com/freqtrade/freqtrade"
+        ],
+        [
+          "Microsoft Qlib",
+          "ML research platform",
+          "MIT",
+          "No common BTC portfolio return verified",
+          "Research pipeline, not a single strategy",
+          "ML model comparison, data/custody/evaluation",
+          "No direct comparable standalone rule",
+          "LATER RESEARCH",
+          "https://github.com/microsoft/qlib"
+        ],
+        [
+          "FinRL",
+          "Reinforcement learning research",
+          "MIT",
+          "Published experiments on other conditions, no common BTC portfolio return verified",
+          "Historical/model-based train/test/trade",
+          "RL action/reward agent",
+          "No without approved data/model train license",
+          "LATER LICENSED ML TRIAL",
+          "https://github.com/AI4Finance-Foundation/FinRL"
+        ],
+        [
+          "Hummingbot",
+          "Crypto market-making engine",
+          "Apache-2.0",
+          "No universal verified portfolio return",
+          "Needs order book and maker fill events",
+          "Quote two-sided bid/ask and refresh orders",
+          "No; 5m OHLCV cannot simulate queue/market making",
+          "FUTURE L2 LIVE PAPER",
+          "https://github.com/hummingbot/hummingbot"
+        ],
+        [
+          "QuantConnect LEAN",
+          "Independent backtest engine",
+          "Apache-2.0",
+          "Engine speed benchmarks ≠ trading ROI",
+          "Multi-market algorithm simulator",
+          "Order fees, brokerage model, accounting verifier",
+          "Possible accounting oracle, not profit-making strategy",
+          "VERIFICATION REFERENCE",
+          "https://github.com/QuantConnect/Lean"
+        ],
+        [
+          "TrendRider",
+          "Freqtrade multi-indicator strategy",
+          "GPL-3.0",
+          "Code comment +55% relative backtest PnL improvement; not portfolio ROI, unverified",
+          "Bybit perpetual, 13 assets, paper self-report",
+          "EMA/RSI/MACD/ADX/volume confluence, exits, stops, protections",
+          "No direct; different instrument, 1h, multiple assets",
+          "SECONDARY HYPOTHESIS ONLY",
+          "https://github.com/darkvolg/Trading"
+        ],
+        [],
+        [
+          "Ranking rule: NO HIGHEST RETURN WINNER CAN BE DETERMINED without same instrument/venue/dates/quote/capital/fees/leverage/risk and independent proof."
+        ],
+        [
+          "Independent-variable causal effect = ON minus OFF on identical matched 30d BTCUSDT SPOT experiment; external bots are a separate competitive benchmark, not an A/B treatment."
+        ],
+        [
+          "Rights: Binance Vision personal NONPRODUCTION research. Public project license is distinct from market-data usage and broker-trading authorization."
+        ]
+      ]
+    },
+    {
+      "tab": "Notion Control Groups",
+      "range": "'Notion Control Groups'!A1:Z200",
+      "values": [
+        [
+          "AION GENESIS CONTROL GROUP | exact Notion matrix | 48h engineering sprint, no new results"
+        ],
+        [
+          "SOURCE: https://app.notion.com/p/420f639e23738070be5ef80a03d0d7d7 · NOTION SPEC REVIEWED 2026-11-22"
+        ],
+        [
+          "Group",
+          "Source architecture / strategy",
+          "Run phase",
+          "Real BTC/USDT return %",
+          "Completed trades",
+          "LE walk-forward",
+          "Lookahead verification",
+          "Training rights",
+          "Implementation evidence",
+          "Risk / notes"
+        ],
+        [
+          "Control A",
+          "Passive Buy & Hold (BTC/USDT)",
+          "REAL BTC OCT 2026 COMPLETED; 10% CAPPED",
+          "-0.7497%",
+          "0",
+          "N/A",
+          "NEXT-BAR UNIT TESTS PASSED; INDEPENDENT FULL LOOKAHEAD AUDIT NOT REPORTED",
+          "PERSONAL NONCOMMERCIAL HISTORICAL ONLY",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018022075",
+          "Terminal exit-adjusted UNREALIZED -0.749696%; no filled exit, 0 round trips; 100%-invested -7.496961% elsewhere."
+        ],
+        [
+          "Control B",
+          "Rule Baseline (Freqtrade EMA/RSI)",
+          "HISTORICAL RUN BLOCKED BY RIGHTS GATE",
+          null,
+          null,
+          "N/A",
+          "NOT EXECUTED",
+          "Personal research opt-in or new authorized data needed",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018104898",
+          "Exit code 22 at license gate; no trades, returns or lookahead output."
+        ],
+        [
+          "Control C",
+          "Open-Source ML (FreqAI LightGBM or XGBoost)",
+          "SYNTHETIC LIGHTGBM BACKTEST SUCCESS; REAL BTC NOT TESTED",
+          null,
+          null,
+          "NOT MEASURED",
+          "SYNTHETIC FREQAI RAN; REAL MARKET LEAKAGE CHECK PENDING",
+          "REAL ML TRAINING RIGHTS NOT ESTABLISHED",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018539446",
+          "Kraken→OKX fixed between immutable commits b9fe and 2543. Synthetic FreqAI 5 training cycles, zero trades; NO REAL market evaluation or training authorization."
+        ],
+        [
+          "Control D",
+          "Open-Source RL (FinRL PPO Agent)",
+          "SYNTHETIC PPO TRAIN/TEST SUCCESS; NO REAL BTC TEST",
+          null,
+          null,
+          "NOT MEASURED",
+          "SYNTHETIC FUTURE-PREFIX AND COST AUDIT PASS",
+          "REAL MODEL TRAINING RIGHTS UNVERIFIED",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018072344",
+          "PPO synthetic-only 0%/0 trades; don't compare with real BTC return."
+        ],
+        [
+          "Treatment",
+          "My AI Model (v1) / AION Genesis",
+          "FROZEN RULE BASELINE; MODEL VERSION NEEDS DEFINITION",
+          null,
+          null,
+          null,
+          "PENDING",
+          "Vision personal nonproduction historical backtest for frozen deterministic rule only",
+          "https://github.com/kalashgit/AION-GENESYS/pull/11",
+          "PR11 Wick+SMA has 0 actual model calls; do not label it trained AI."
+        ],
+        [],
+        [
+          "PRIMARY METRICS FROM NOTION",
+          "Formula",
+          "Method",
+          "Current measured state"
+        ],
+        [
+          "Percentage Return R_pct",
+          "((V_end - V_start) / V_start) × 100",
+          "Same historical evaluation dates and costs for every group",
+          "NOT MEASURED FOR NEW FIVE-GROUP RUN"
+        ],
+        [
+          "Completed Trades N_trades",
+          "count(completed entry→exit round trips)",
+          "Report entries/exits separately; open buy-and-hold not completed",
+          "NOT MEASURED"
+        ],
+        [
+          "Learning Effectiveness LE",
+          "(M_second_half - M_first_half) / N_training_cycles",
+          "Actual walk-forward split and counted model retraining cycles; when 0 -> N/A",
+          "NOT MEASURED"
+        ],
+        [
+          "Earlier Notion LE-A",
+          "(M_post-M_pre)/delta_iterations",
+          "Separate version-over-version metric, NOT interchangeable with the control-group LE",
+          "Existing PR11 diagnostic only"
+        ],
+        [
+          "Earlier Notion LE-B",
+          "1 - (Loss_late/Loss_early)",
+          "Same window and capital; prior loss 0 -> N/A",
+          "Existing PR11 diagnostic only"
+        ],
+        [
+          "Broader efficiency",
+          "50% return progress + 20% fewer entries +15% p95 latency saving +10% CPU/memory/model saving +5% hotpath saving",
+          "Supplemental metric, not on Notion 3-primary group spec",
+          "NOT MEASURED FOR NEW FIVE-GROUP RUN"
+        ],
+        [],
+        [
+          "EIGHT SUPPORTING METRICS",
+          "Sharpe",
+          "Sortino",
+          "Maximum drawdown",
+          "Calmar",
+          "Profit factor",
+          "Expectancy",
+          "Slippage (bps)",
+          "Turnover"
+        ],
+        [
+          "SUPPORTING RULE",
+          "Only calculate with justified periodic returns, fill observations, available trade P&L; otherwise N/A."
+        ],
+        [],
+        [
+          "EXPERIMENT CONSTANTS",
+          "BTCUSDT spot 5m; frozen UTC market window, fees, simulated slippage, venue, starting paper capital and fills; no mismatched samples"
+        ],
+        [
+          "Paper capital",
+          "1,000 USDT PR11 baseline, NOT the example 10,000 USDT in Notion"
+        ],
+        [
+          "Cost model",
+          "10bps fee per side, 5bps modeled slippage per side and 10bps full spread; 1x/2x/5x stress per existing research"
+        ],
+        [
+          "Runtime effort",
+          "48h intensive development/retrospective-testing target, NOT a 48h return horizon, NOT a promised completion time"
+        ],
+        [
+          "Source rights",
+          "Historical Vision data is private nonproduction; FreqAI/FinRL real model training is blocked pending separate permission"
+        ],
+        [
+          "Notion example commands",
+          "2025-10-01 → 2026-03-31 examples are NOT executable proof on our May–Oct 2026 archives; revalidate configuration and lookahead"
+        ],
+        [],
+        [
+          "EXACT PRIVATE CSV LOG HEADER"
+        ],
+        [
+          "run_id",
+          "timestamp_open",
+          "timestamp_close",
+          "side",
+          "qty",
+          "ref_price",
+          "fill_price",
+          "fee_paid",
+          "pnl_net",
+          "equity_after",
+          "training_window_id"
+        ],
+        [
+          "Store row-level market inputs, labels and trade journals in ignored private storage; only authorized aggregate metrics and source links here."
+        ],
+        [],
+        [
+          "TRIAL EXECUTION REGISTER | no fabricated returns"
+        ],
+        [
+          "Experiment ID",
+          "Date window UTC",
+          "Group",
+          "Source hash",
+          "Algorithm hash",
+          "Train cycles",
+          "Actual R_pct",
+          "Trades",
+          "LE",
+          "Lookahead",
+          "Status"
+        ],
+        [
+          "R04-A",
+          null,
+          "A",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          "N/A",
+          "PENDING",
+          "NOT RUN"
+        ],
+        [
+          "R04-B",
+          null,
+          "B",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          "N/A",
+          "PENDING",
+          "NOT RUN"
+        ],
+        [
+          "R04-C",
+          null,
+          "C",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "PENDING",
+          "REAL TRAINING RIGHTS PENDING"
+        ],
+        [
+          "R04-D",
+          null,
+          "D",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "PENDING",
+          "REAL TRAINING RIGHTS PENDING"
+        ],
+        [
+          "R04-T",
+          null,
+          "Treatment",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "PENDING",
+          "NOT RUN"
+        ]
+      ]
+    },
+    {
+      "tab": "Benchmark 4x4",
+      "range": "'Benchmark 4x4'!A1:Z200",
+      "values": [
+        [
+          "AION GENESIS | FOUR MARKETS × FOUR MODELS | SIXTEEN EXPERIMENT CELLS"
+        ],
+        [
+          "Within each market, change ONLY model. Across blocks, change ONE market/environment factor. Hypothesis (founder, stated pre-results): simple benchmark or FinRL PPO wins."
+        ],
+        [
+          "Environment",
+          "Environment definition",
+          "Symbol/selector",
+          "Data eligibility",
+          "Control",
+          "Model",
+          "Data kind",
+          "Status",
+          "UTC evaluation window",
+          "Net return fraction",
+          "Completed trades",
+          "DD fraction",
+          "LE walkforward",
+          "Verdict",
+          "Actions URL",
+          "Issue / notes",
+          "Volatility selection",
+          "Source ZIP SHA"
+        ],
+        [
+          "E0",
+          "BTCUSDT baseline, October 2026",
+          "BTCUSDT",
+          "Official Binance spot 5m; 8928 contiguous bars",
+          "A",
+          "Passive buy & hold (10%-capped)",
+          "REAL OCTOBER SPOT",
+          "REAL HISTORICAL PASS",
+          "2026-10-01 to 2026-11-01 UTC",
+          "-0.7497%",
+          "0",
+          "1.2661%",
+          "N/A / NOT MEASURED",
+          "UNDER +5%, NOT A WINNER",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018022075",
+          "Open hold: 1 entry, 0 exits; terminal exit-cost hypothetical",
+          "SOURCE VERIFIED",
+          "c7f1aaa8f8b709eab248d447c8f54e60dfc2134909db6fe9ec31408fd8d63490"
+        ],
+        [
+          "E0",
+          "BTCUSDT baseline, October 2026",
+          "BTCUSDT",
+          "Official Binance spot 5m; 8928 contiguous bars",
+          "B",
+          "Freqtrade EMA12/26 RSI14",
+          "NOT FETCHED",
+          "RIGHTS GATE FAILURE",
+          "2026-10-01 to 2026-11-01 UTC",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "REAL RETURNS NOT MEASURED",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018104898",
+          "Scope gate exit 22",
+          "SOURCE VERIFIED"
+        ],
+        [
+          "E0",
+          "BTCUSDT baseline, October 2026",
+          "BTCUSDT",
+          "Official Binance spot 5m; 8928 contiguous bars",
+          "C",
+          "FreqAI LightGBM",
+          "SYNTHETIC ONLY",
+          "SYNTHETIC LIGHTGBM TRAIN+BACKTEST SUCCESS, 5 cycles; REAL NOT MEASURED",
+          "2026-10-01 to 2026-11-01 UTC",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "REAL RETURNS NOT MEASURED",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018539446",
+          "Prior SHA b9fe config Kraken; current SHA 2543 changed it to OKX and FreqAI ran successfully on synthetic data. 5 train cycles, 0 synthetic trades; real BTC NOT MEASURED.",
+          "SOURCE VERIFIED"
+        ],
+        [
+          "E0",
+          "BTCUSDT baseline, October 2026",
+          "BTCUSDT",
+          "Official Binance spot 5m; 8928 contiguous bars",
+          "D",
+          "FinRL PPO",
+          "SYNTHETIC ONLY",
+          "SYNTHETIC ONLY PASS",
+          "2026-10-01 to 2026-11-01 UTC",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "REAL RETURNS NOT MEASURED",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018072344",
+          "PPO synthetic 0-trade policy",
+          "SOURCE VERIFIED"
+        ],
+        [
+          "E1",
+          "Higher realized pre-window volatility",
+          "SOLUSDT / DOGEUSDT candidates, NOT selected",
+          "Pre-window return variance must exceed E0; full OHLCV/rights",
+          "A",
+          "Passive buy & hold (10%-capped)",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E1",
+          "Higher realized pre-window volatility",
+          "SOLUSDT / DOGEUSDT candidates, NOT selected",
+          "Pre-window return variance must exceed E0; full OHLCV/rights",
+          "B",
+          "Freqtrade EMA12/26 RSI14",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E1",
+          "Higher realized pre-window volatility",
+          "SOLUSDT / DOGEUSDT candidates, NOT selected",
+          "Pre-window return variance must exceed E0; full OHLCV/rights",
+          "C",
+          "FreqAI LightGBM",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E1",
+          "Higher realized pre-window volatility",
+          "SOLUSDT / DOGEUSDT candidates, NOT selected",
+          "Pre-window return variance must exceed E0; full OHLCV/rights",
+          "D",
+          "FinRL PPO",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E2",
+          "Lower pre-window volatility than E0/E1",
+          "USDCUSDT candidate, not selected",
+          "Require variance lower than both and liquidity/tick eligibility",
+          "A",
+          "Passive buy & hold (10%-capped)",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E2",
+          "Lower pre-window volatility than E0/E1",
+          "USDCUSDT candidate, not selected",
+          "Require variance lower than both and liquidity/tick eligibility",
+          "B",
+          "Freqtrade EMA12/26 RSI14",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E2",
+          "Lower pre-window volatility than E0/E1",
+          "USDCUSDT candidate, not selected",
+          "Require variance lower than both and liquidity/tick eligibility",
+          "C",
+          "FreqAI LightGBM",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E2",
+          "Lower pre-window volatility than E0/E1",
+          "USDCUSDT candidate, not selected",
+          "Require variance lower than both and liquidity/tick eligibility",
+          "D",
+          "FinRL PPO",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E3",
+          "Unorthodox realistically challenging market",
+          "Preselected adverse-choppiness market, TBD",
+          "Pre-window extreme wick/reversal score and fill realism",
+          "A",
+          "Passive buy & hold (10%-capped)",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E3",
+          "Unorthodox realistically challenging market",
+          "Preselected adverse-choppiness market, TBD",
+          "Pre-window extreme wick/reversal score and fill realism",
+          "B",
+          "Freqtrade EMA12/26 RSI14",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E3",
+          "Unorthodox realistically challenging market",
+          "Preselected adverse-choppiness market, TBD",
+          "Pre-window extreme wick/reversal score and fill realism",
+          "C",
+          "FreqAI LightGBM",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [
+          "E3",
+          "Unorthodox realistically challenging market",
+          "Preselected adverse-choppiness market, TBD",
+          "Pre-window extreme wick/reversal score and fill realism",
+          "D",
+          "FinRL PPO",
+          "NO DATA",
+          "NOT RUN",
+          "PENDING",
+          null,
+          null,
+          null,
+          "N/A / NOT MEASURED",
+          "NOT TESTED",
+          null,
+          "Requires pre-window environment selection and identical data for A-D",
+          "NOT SELECTED"
+        ],
+        [],
+        [
+          "TRIAL DESIGN NOTES"
+        ],
+        [
+          "E0: BTC baseline, same price bytes all models only when training rights allow. E1: higher-vol, E2: lower-vol, E3: adversarial. Notional environments are placeholders until dataset manifest is pinned."
+        ],
+        [
+          "A and D are NOT comparable: A real Binance Oct BTC; D synthetic RNG. C successfully trained/backtested on a DIFFERENT synthetic series; B blocked. No four-model real-market leaderboard. See Controls Trial Registry."
+        ],
+        [
+          "Data rights for ML: must independently permit FreqAI/FinRL training; otherwise real return NOT MEASURED."
+        ],
+        [
+          "+5% net minimum exploratory result; +66.7% desired; no outcome assumed."
+        ],
+        [
+          "Handoff: https://docs.google.com/document/d/1yx5KfWm8Sz-0bgEpG2oLqGGEvm3-A3BS5BDWevzT7Q0/edit"
+        ]
+      ]
+    },
+    {
+      "tab": "GitHub Run Audit",
+      "range": "'GitHub Run Audit'!A1:Z200",
+      "values": [
+        [
+          "GITHUB ACTIONS AUDIT | 22 NOV 2026 | EXACT RUNNER RESULTS"
+        ],
+        [
+          "Control A is the only validated REAL BTC October historical result; B blocked by data rights; C now verified technical LightGBM synthetic success (5 cycles, no trades); D synthetic PPO success. NO comparable four-way market ranking. See Controls Trial Registry for all failed/false-green trials."
+        ],
+        [
+          "Control",
+          "Repository",
+          "Branch",
+          "Git SHA",
+          "Run URL",
+          "CI status",
+          "Type",
+          "Data series",
+          "Net return fraction",
+          "Completed trips",
+          "DD fraction",
+          "Cause and clarification",
+          "Artifact",
+          "Rights"
+        ],
+        [
+          "A capped 10%",
+          "kalashgit/ai_mentor",
+          "experiment/control-a-passive-btc-202610",
+          "6900951d33afb363c72ae59288e7dcf36f24743a",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018022075",
+          "SUCCESS",
+          "REAL HISTORICAL",
+          "Oct BTCUSDT Binance Vision 8928 5m",
+          "-0.7497%",
+          "0",
+          "1.2661%",
+          "One open entry, zero exit; return is hypothetical exit-adjusted mark; NOT 1 completed trade.",
+          "A #14752134701",
+          "PERSONAL NONCOMMERCIAL HISTORICAL ONLY"
+        ],
+        [
+          "A 100% exposure",
+          "kalashgit/ai_mentor",
+          "experiment/control-a-passive-btc-202610",
+          "6900951d33afb363c72ae59288e7dcf36f24743a",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018022075",
+          "SUCCESS",
+          "REAL HISTORICAL OTHER EXPOSURE",
+          "Same Oct BTCUSDT",
+          "-7.4970%",
+          "0",
+          "12.2396%",
+          "Ten 100-USDT entries and no exit; NOT risk matched to 10%-capped policy.",
+          "A #14752134701",
+          "PERSONAL NONCOMMERCIAL HISTORICAL ONLY"
+        ],
+        [
+          "B",
+          "kalashgit/ProjectLight",
+          "experiment/control-b-freqtrade-ema-rsi-202610",
+          "8d134b826380369acb08cbf64508537534e3b66d",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018104898",
+          "FAILURE",
+          "NO MARKET BACKTEST",
+          "NONE",
+          null,
+          null,
+          null,
+          "Source license gate exited code 22; Freqtrade, lookahead and cost audits SKIPPED.",
+          "B #14752711770",
+          "SOURCE RIGHTS BLOCKED"
+        ],
+        [
+          "C",
+          "kalashgit/ProjectLight",
+          "experiments/control-c-freqai-202610",
+          "2543f02539bb1c7d18aa73a0d75b6858568dffc7",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018539446",
+          "SUCCESS",
+          "SYNTHETIC FREQAI FULL TRAIN+BACKTEST",
+          "Synthetic 17568 bars, 5 model training cycles",
+          null,
+          null,
+          null,
+          "Old SHA b9fe config Kraken; SHA 2543 fixed to OKX (verified compare). Synthetic FreqAI ran, five training cycles, 0 trades; real BTC outcomes NOT MEASURED.",
+          "C #14752298250 (190775 bytes)",
+          "REAL TRAINING RIGHTS NOT VERIFIED"
+        ],
+        [
+          "D",
+          "kalashgit/ai_mentor",
+          "experiments/control-d-finrl-ppo-20261122",
+          "601868f5c54ac357e3c8b2acbc7b31051ddcb0cb",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018072344",
+          "SUCCESS",
+          "SYNTHETIC PPO ONLY",
+          "Synthetic different seeds Sep train/Oct test",
+          null,
+          null,
+          null,
+          "Synthetic PPO policy made no trades, 0% on SYNTHETIC ONLY, so real market PnL NOT MEASURED.",
+          "D #14752242957",
+          "REAL TRAINING RIGHTS NOT VERIFIED"
+        ],
+        [],
+        [
+          "FINDING",
+          "No model winner. C/D used different synthetic datasets from each other and from A; B acquired no dataset."
+        ],
+        [
+          "CAUTION",
+          "B license gate remains valid. C Kraken configuration root cause is FIXED at SHA 2543f; earlier CI-green SHA 189c had invalid Telegram config. No new comparable market evaluation or real ML/RL permission."
+        ],
+        [
+          "HYPOTHESIS",
+          "Founder stated BEFORE RESULTS: simple baseline or FinRL PPO wins; user attestation only, not hash-verified timestamp."
+        ],
+        [
+          "HANDOFF",
+          "https://docs.google.com/document/d/1yx5KfWm8Sz-0bgEpG2oLqGGEvm3-A3BS5BDWevzT7Q0/edit"
+        ]
+      ]
+    },
+    {
+      "tab": "Controls Trial Registry",
+      "range": "'Controls Trial Registry'!A1:Z200",
+      "values": [
+        [
+          "AION Genesis | APPEND-ONLY VERIFIED TRIAL REGISTRY | 2026-11-22"
+        ],
+        [
+          "Source = GitHub Actions workflow API and decoded job logs. Runner elapsed seconds are wall-clock proxies, NOT billing or CPU cost. Empty performance cells mean NOT MEASURED. Failed and false-green runs retained."
+        ],
+        [
+          "Run started (UTC)",
+          "Control",
+          "Environment",
+          "GitHub CI",
+          "Scientific status",
+          "Real net % (open mark)",
+          "Real completed trips",
+          "Synthetic net %",
+          "Synthetic trips",
+          "Training cycles / steps",
+          "Runner elapsed s (not billing)",
+          "Compute s (partial)",
+          "Actual $ cost",
+          "Exact commit SHA",
+          "Observed result / blocker",
+          "GitHub Actions evidence URL",
+          "Dataset and rights"
+        ],
+        [
+          "2026-11-22T11:34:23Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "37",
+          null,
+          "NOT MEASURED",
+          "f299ca8dcb1c4b140050e0b4c7f6869c1a0f3eca",
+          "FAILED: synthetic data generation and report write permissions on mounted container.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45017985172",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:34:37Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "41",
+          null,
+          "NOT MEASURED",
+          "f299ca8dcb1c4b140050e0b4c7f6869c1a0f3eca",
+          "FAILED: synthetic data generation and report write permissions on mounted container.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018003396",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:35:24Z",
+          "D",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "success",
+          "VALID_SYNTHETIC_ONLY",
+          null,
+          null,
+          "0",
+          "0",
+          "PPO 8192 steps",
+          "66",
+          "5.279996431",
+          "NOT MEASURED",
+          "601868f5c54ac357e3c8b2acbc7b31051ddcb0cb",
+          "FinRL PPO 8192 steps, flat synthetic portfolio and zero fills, 5.28 sec measured training.",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018072344",
+          "Synthetic only; real RL rights unverified"
+        ],
+        [
+          "2026-11-22T11:35:43Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "35",
+          null,
+          "NOT MEASURED",
+          "eb0e492d91d5138607fee7ad99cc5c54acf63080",
+          "FAILED: synthetic generator missing numpy dependency.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018098055",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:35:46Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "46",
+          null,
+          "NOT MEASURED",
+          "eb0e492d91d5138607fee7ad99cc5c54acf63080",
+          "FAILED: synthetic generator missing numpy dependency.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018101819",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:35:48Z",
+          "B",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "BLOCKED_DATA_RIGHTS",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "11",
+          null,
+          "NOT MEASURED",
+          "8d134b826380369acb08cbf64508537534e3b66d",
+          "DATA_RIGHTS_BLOCKED, exit code 22. No Freqtrade backtest executed.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018104898",
+          "No market data; commercial rights gate"
+        ],
+        [
+          "2026-11-22T11:37:13Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "success",
+          "INVALID_GREEN_CI",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "44",
+          null,
+          "NOT MEASURED",
+          "189c60f29a584b2765a1ff0762aaab1298853841",
+          "CI GREEN FALSE POSITIVE: Freqtrade configuration error; required Telegram token missing. No valid backtest.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018218011",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:37:15Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "success",
+          "INVALID_GREEN_CI",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "42",
+          null,
+          "NOT MEASURED",
+          "189c60f29a584b2765a1ff0762aaab1298853841",
+          "CI GREEN FALSE POSITIVE: Freqtrade configuration error; required Telegram token missing. No valid backtest.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018221124",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:38:31Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "41",
+          null,
+          "NOT MEASURED",
+          "de00b6e24030d10551533b05e10444af83e04483",
+          "FAILED: Binance exchangeInfo HTTP 451 inaccessible; synthetic backtester not started.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018318644",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:38:33Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "48",
+          null,
+          "NOT MEASURED",
+          "de00b6e24030d10551533b05e10444af83e04483",
+          "FAILED: Binance exchangeInfo HTTP 451 inaccessible; synthetic backtester not started.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018322055",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:38:49Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "43",
+          null,
+          "NOT MEASURED",
+          "0864e28397b5fa32b0d1f9c08a7b4fc44f8b7309",
+          "FAILED: Binance exchangeInfo HTTP 451 inaccessible; synthetic backtester not started.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018341436",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:38:52Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "48",
+          null,
+          "NOT MEASURED",
+          "0864e28397b5fa32b0d1f9c08a7b4fc44f8b7309",
+          "FAILED: Binance exchangeInfo HTTP 451 inaccessible; synthetic backtester not started.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018345981",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:40:03Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "48",
+          null,
+          "NOT MEASURED",
+          "b9fe80aa0aa377163136bfa6d2a523c9e50f2e89",
+          "FAILED: Kraken exchange config cannot load historic OHLCV with FreqAI.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018435631",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:40:06Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "failure",
+          "FAILED_TECHNICAL",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "57",
+          null,
+          "NOT MEASURED",
+          "b9fe80aa0aa377163136bfa6d2a523c9e50f2e89",
+          "FAILED: Kraken exchange config cannot load historic OHLCV with FreqAI.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018440297",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:41:14Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "success",
+          "VALID_SYNTHETIC_ONLY",
+          null,
+          null,
+          "0",
+          "0",
+          "5",
+          "64",
+          "9",
+          "NOT MEASURED",
+          "2543f02539bb1c7d18aa73a0d75b6858568dffc7",
+          "VALID SYNTHETIC execution: OKX resolved; five LightGBM retraining cycles, zero October trades. Real-market rights absent; native fee-only not full friction audited.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018534590",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:41:17Z",
+          "C",
+          "E0 (synthetic checks are NOT E0 market measurements)",
+          "success",
+          "VALID_SYNTHETIC_ONLY",
+          null,
+          null,
+          "0",
+          "0",
+          "5",
+          "55",
+          "10",
+          "NOT MEASURED",
+          "2543f02539bb1c7d18aa73a0d75b6858568dffc7",
+          "VALID SYNTHETIC execution: OKX resolved; five LightGBM retraining cycles, zero October trades. Real-market rights absent; native fee-only not full friction audited.",
+          "https://github.com/kalashgit/ProjectLight/actions/runs/45018539446",
+          "Synthetic only; real ML rights unverified"
+        ],
+        [
+          "2026-11-22T11:34:50Z",
+          "A",
+          "E0 REAL BTCUSDT October",
+          "success",
+          "VALID_REAL_HISTORICAL_MARK_ONLY",
+          "-0.749696127",
+          "0",
+          null,
+          null,
+          "0",
+          "24",
+          "0.742356645",
+          "NOT MEASURED",
+          "6900951d33afb363c72ae59288e7dcf36f24743a",
+          "10%-capped BTC. 1 entry, 0 exits, terminal exit-cost-adjusted unrealized return −0.749696127%, max DD 1.266095866%. Extra 100% exposure −7.496961274% is not risk matched.",
+          "https://github.com/kalashgit/ai_mentor/actions/runs/45018022075",
+          "REAL provider data: personal nonproduction historical-backtest scope only"
+        ],
+        [
+          "ENVIRONMENT READINESS — NO NEW E1/E2/E3 MODEL RETURNS"
+        ],
+        [
+          "Env",
+          "Definition",
+          "State",
+          "Reason",
+          "Real market four-way validated?",
+          "Required before execution"
+        ],
+        [
+          "E0",
+          "BTCUSDT spot 5m Oct 2026",
+          "BLOCKED FOUR-WAY",
+          "A historical only; B rights gate; C/D synthetic with different generated series; fee/fill parity not proven.",
+          "NO",
+          "Licensed same 5m bytes, consistent fees/fills, authorized C/D training"
+        ],
+        [
+          "E1",
+          "Higher prewindow volatility (one categorical dataset change)",
+          "NOT EXECUTED",
+          "No preregistered market, verified September selection sample or 5m October checksum for all controls.",
+          "NO",
+          "Select on PRE-window volatility and liquidity, secure license"
+        ],
+        [
+          "E2",
+          "Lower prewindow volatility (one categorical dataset change)",
+          "NOT EXECUTED",
+          "No qualifying prewindow-selected market with verified tick/spread realism and data rights.",
+          "NO",
+          "Select on PRE-window volatility and liquidity, secure license"
+        ],
+        [
+          "E3",
+          "Choppy/wick-heavy market (one categorical dataset change)",
+          "NOT EXECUTED",
+          "No prewindow selection, source checksum or fill realism evidence for adverse candidate.",
+          "NO",
+          "Preregister adverse score, check fills and licensed source"
+        ],
+        [],
+        [
+          "FOUNDER HYPOTHESIS (pre-results attestation)",
+          "Simple benchmark OR FinRL PPO performs best; do not overwrite prediction with partial or synthetic evidence."
+        ],
+        [
+          "LE_walkforward",
+          "NOT MEASURED for this four-way comparison; static passive N/A. No verified matching chronological market folds across training models."
+        ],
+        [
+          "Execution authorization",
+          "No Codex, no AION-GENESYS modification, no live trading, no training on unauthorized real data."
+        ]
+      ]
+    }
+  ]
+}
