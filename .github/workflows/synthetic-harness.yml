@@ -1,0 +1,24 @@
+name: Isolated synthetic research checks
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Write synthetic report
+        run: python -m oracle_lab.run_smoke --output artifacts/synthetic-smoke.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-smoke
+          path: artifacts/synthetic-smoke.json
+          retention-days: 7
