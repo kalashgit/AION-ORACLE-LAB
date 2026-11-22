@@ -3,6 +3,19 @@
 **Current engineering state:** FOUNDATION_IN_PROGRESS; the complete system is NOT yet built.
 **Verified date:** 2026-11-22 UTC.
 
+## Latest engineering follow-through (2026-11-22 UTC)
+
+**Three reviewable changes were implemented and tested after campaign PR #10:**
+
+- [Lab PR #18](https://github.com/kalashgit/AION-ORACLE-LAB/pull/18): installed the four missing ML4T companion instruction skills (purging/embargo, agent-tool-contracts, registry-system, risk-metrics). [CI run 45053726075](https://github.com/kalashgit/AION-ORACLE-LAB/actions/runs/45053726075) verifies **16 installed skills, zero missing declared dependencies**. This is skill compatibility, not model intelligence.
+- [Lab PR #19](https://github.com/kalashgit/AION-ORACLE-LAB/pull/19), stacked on campaign #10: introduced a **local cross-run synthetic-only receipt journal** with HMAC option, replay validation, hash chaining, duplicate safety and adversarial tests. [CI run 45053865284](https://github.com/kalashgit/AION-ORACLE-LAB/actions/runs/45053865284) verifies **43 Python tests** across the research harness. Cross-run persistence is demonstrated only for a shared local storage path, not independently durable managed CI storage.
+- [Private application PR #13](https://github.com/kalashgit/AION-GENESYS/pull/13), stacked on PR12: connected the EXISTING Oracle terminal to a manually selected, synthetic lab diagnostic artifact with strict read-only classifications. [CI run 45054372391](https://github.com/kalashgit/AION-GENESYS/actions/runs/45054372391) passed three Node contract tests and generated an ACTUAL report from pinned public LAB SHA `42588ff6bc4e06306ef4fda29e97451254f44987` which the private JavaScript terminal adapter accepted. No browser/device integration, real data authentication, or actual model learning has been established.
+
+All three PRs remain **DRAFT / UNMERGED** pending founder review. No existing application production branch, broker order path, paid service or model weights were changed.
+
+**Current next engineering gates:** (1) review compatible PR stacking/merges, (2) make evidence externally durable and authenticated across hosted CI runs, (3) actual Genesis/Qwen hypothesis generation and Langfuse-traced independent baseline, (4) rights-cleared economically comparable historical and then forward tests, (5) full Oracle UI/device end-to-end verification. +5% real-market/live profitability and model corrective-learning gains remain **NOT DEMONSTRATED**.
+
+
 ## Current campaign change
 - Lab draft PR: https://github.com/kalashgit/AION-ORACLE-LAB/pull/10
 - Campaign branch: `campaign/full-system-research-v1`
