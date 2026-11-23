@@ -1,5 +1,10 @@
 # Genesis × Oracle Full Campaign — Verified Engineering Handoff
 
+## A0 integration evidence follow-up (2026-11-23; draft-only)
+
+A new isolated LAB review branch documents the read-only private PR #10→#11→#12→#13 ancestry, pinned head SHAs, compatibility gates, rollback and confidentiality boundaries in `docs/A0-INTEGRATION-EVIDENCE.md`. A small standard-library regression test asserts the integration remains classified **NOT INTEGRATED** and requires the full private review stack. This is a review artifact, not a private application change. CI status must be checked on the new branch before asserting success.
+
+
 **Current engineering state:** FOUNDATION_IN_PROGRESS; the complete system is NOT yet built.
 **Verified date:** 2026-11-22 UTC.
 
