@@ -15,7 +15,7 @@ class IntegrationEvidenceGateTest(unittest.TestCase):
     def test_gate_denies_premature_claims(self):
         content = DOC.read_text(encoding="utf-8")
         for term in ("not established", "no broker writes", "without merging", "held-out"):
-            self.assertIn(term, content)
+            self.assertIn(term, content.casefold())
 
 if __name__ == "__main__":
     unittest.main()

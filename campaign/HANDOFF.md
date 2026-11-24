@@ -61,3 +61,6 @@ All three PRs remain **DRAFT / UNMERGED** pending founder review. No existing ap
 - CI cost and runtime: Actions workflow run is evidenced above; actual infrastructure charges not independently measured.
 - This is bounded software research, not a continuously resident autonomous engineer. Each authorized agent session or job must leave another evidence-backed handoff.
 - If a candidate claims a profitable 5% live strategy, it MUST be challenged with separate independent forward-market evidence before such a claim can be accepted.
+
+## A0 follow-up — 2026-11-24
+PR #23 exact head c5a23db1 failed both workflows (runs 45241620993 and 45241621152): 35 tests, one failure, case-sensitive matching of 'Not established'. Both artifact stages were skipped. The isolated follow-up normalizes case without removing any required safety phrase. New CI remains pending until independently checked. Exact-head workflow queries for LAB #10 and #19 and the private adapter candidate returned successful completed workflows; this does not establish deployment or end-to-end device integration. Review #23 and its follow-up together; no merge authorized. Next: verify follow-up CI and artifact generation before advancing the receipt contract.
