@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Genesis Terminal – eToro sign-in</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f7f8f8; --fg: #121516; --card: #fff; --line: #d9dede; --accent: #087c29; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111815; --fg: #e8efe9; --card: #18211c; --line: #2c3a32; --accent: #6df29a; } }
+  body { margin: 0; padding: 16px; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 34rem; margin: 8vh auto; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  h1 { font-size: 1.2rem; margin: 0 0 .5rem; } code, textarea { font: 13px ui-monospace, monospace; }
+  textarea { width: 100%; box-sizing: border-box; min-height: 7rem; border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: transparent; color: inherit; }
+  button { min-height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: var(--accent); color: #fff; font-weight: 700; margin-top: 10px; }
+  @media (prefers-color-scheme: dark) { button { color: #0b140f; } }
+  .note { font-size: .85rem; opacity: .8; } .bad { color: #c5262b; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Genesis Terminal – eToro sign-in</h1>
+  <p id="msg">Reading the response…</p>
+  <div id="box" hidden>
+    <textarea id="payload" readonly aria-label="Authorization response to paste into Genesis Terminal"></textarea>
+    <button id="copy" type="button">Copy</button>
+    <p class="note">Paste this into <b>Sources › Connect with eToro › Complete connection</b> in the Genesis Terminal. The code works only once and only with the sign-in your Terminal started (PKCE), and expires quickly. Nothing on this page is sent anywhere; it has no server, no analytics and no external requests.</p>
+  </div>
+  <p class="note">If you did not start this sign-in, close this page.</p>
+</main>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var msg = document.getElementById('msg'), box = document.getElementById('box'), area = document.getElementById('payload');
+  // Remove the response from the address bar and history straight away; it is kept only in this page's memory.
+  history.replaceState(null, '', location.pathname);
+  var error = params.get('error'), code = params.get('code'), state = params.get('state');
+  var safe = function (v, max) { return typeof v === 'string' && v.length > 0 && v.length <= max && /^[A-Za-z0-9._~+\/=-]+$/.test(v); };
+  if (error) {
+    msg.className = 'bad';
+    msg.textContent = 'eToro returned an error: ' + (/^[a-z_]{1,64}$/.test(error) ? error : 'unrecognised') + '. Nothing was connected. Start again from the Terminal.';
+  } else if (safe(code, 2048) && safe(state, 256)) {
+    msg.textContent = 'Signed in. Copy the text below into the Genesis Terminal.';
+    area.value = JSON.stringify({ v: 1, code: code, state: state });
+    box.hidden = false;
+    document.getElementById('copy').addEventListener('click', function () {
+      area.select();
+      (navigator.clipboard ? navigator.clipboard.writeText(area.value) : Promise.reject()).catch(function () { document.execCommand('copy'); });
+      this.textContent = 'Copied';
+    });
+  } else {
+    msg.className = 'bad';
+    msg.textContent = 'No valid authorization response found. Start again from the Terminal.';
+  }
+})();
+</script>
+</body>
+</html>
